@@ -1,6 +1,6 @@
 # Contributing to GroundClaim
 
-Contributions are welcome — especially **wrong verdicts** (a false *confirmation* above all), **claim phrasings it
+Contributions are very welcome — especially **wrong verdicts** (a false *confirmation* above all), **claim phrasings it
 misses**, and **trace formats** of other agents and harnesses.
 
 ```bash
