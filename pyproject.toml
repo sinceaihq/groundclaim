@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "groundclaim"
+version = "0.1.0"
+description = "Check what an AI agent says it did against evidence of what actually happened: git, test reports, CI and deployments."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+requires-python = ">=3.10"
+authors = [{ name = "Since AI ry", email = "builders@sinceai.fi" }]
+keywords = ["ai-agents", "verification", "evidence", "llm", "ci", "junit", "provenance", "coding-agents"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Quality Assurance",
+  "Topic :: Software Development :: Testing",
+]
+# No runtime dependencies: standard library only (git is called as a program, read-only).
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.11", "jsonschema>=4.20"]
+
+[project.scripts]
+groundclaim = "groundclaim.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/sinceaihq/groundclaim"
+Issues = "https://github.com/sinceaihq/groundclaim/issues"
+
+[tool.hatch.build.targets.sdist]
+include = ["/src", "/tests", "/docs", "/bench", "/README.md", "/LICENSE", "/NOTICE", "/CHANGELOG.md", "/schema"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+ignore = ["E501", "RUF001", "RUF002", "RUF003", "RUF005"]
+
+[tool.mypy]
+python_version = "3.10"
+files = ["src"]
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

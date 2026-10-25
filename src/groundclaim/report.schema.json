@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/sinceaihq/groundclaim/schema/report-0.1.json",
+  "title": "GroundClaim report",
+  "description": "Claims found in an AI agent's message, the evidence gathered about them and a verdict per claim.",
+  "type": "object",
+  "required": ["schema_version", "subject", "assessments", "evidence", "warnings"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "0.1" },
+    "subject": {
+      "description": "What was checked: repository, revision, trace, GitHub repository, tool version.",
+      "type": "object",
+      "properties": {
+        "tool": { "type": "string" },
+        "repository": { "type": "string" },
+        "head": { "type": ["string", "null"] },
+        "branch": { "type": ["string", "null"] },
+        "base": { "type": ["string", "null"] },
+        "uncommitted_files": { "type": "integer", "minimum": 0 },
+        "trace": { "type": "string" },
+        "github": { "type": "string" }
+      }
+    },
+    "assessments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim", "verdict", "reason", "links"],
+        "additionalProperties": false,
+        "properties": {
+          "claim": { "$ref": "#/$defs/claim" },
+          "verdict": { "$ref": "#/$defs/verdict" },
+          "reason": { "type": "string" },
+          "links": { "type": "array", "items": { "$ref": "#/$defs/link" } }
+        }
+      }
+    },
+    "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  },
+  "$defs": {
+    "verdict": {
+      "enum": ["confirmed", "supported", "contradicted", "insufficient_evidence", "unverifiable"],
+      "description": "confirmed: decisive independent evidence for the current revision and nothing contradicts. supported: only observed (or capped) support. contradicted: some evidence contradicts. insufficient_evidence: nothing decisive either way. unverifiable: no given source can check this kind of claim."
+    },
+    "claim": {
+      "type": "object",
+      "required": ["id", "type", "text", "span", "details"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^c[0-9]+$" },
+        "type": {
+          "enum": ["tests_passed", "build_succeeded", "lint_clean", "code_changed", "bug_fixed", "committed", "pushed",
+                   "pr_opened", "deployed", "released", "file_created", "task_completed"]
+        },
+        "text": { "type": "string", "description": "The sentence the claim was taken from." },
+        "span": {
+          "type": "array", "prefixItems": [{ "type": "integer" }, { "type": "integer" }], "minItems": 2, "maxItems": 2,
+          "description": "Character offsets [start, end) of the sentence in the message."
+        },
+        "details": {
+          "type": "object",
+          "properties": {
+            "files": { "type": "array", "items": { "type": "string" } },
+            "path": { "type": "string" },
+            "commit": { "type": "string" },
+            "branch": { "type": "string" },
+            "pr": { "type": "integer" },
+            "environment": { "type": "string" },
+            "version": { "type": "string" },
+            "count": { "type": "integer" },
+            "hedged": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "link": {
+      "type": "object",
+      "required": ["evidence", "stance", "reason", "decisive"],
+      "additionalProperties": false,
+      "properties": {
+        "evidence": { "type": "string", "pattern": "^e[0-9]+$" },
+        "stance": { "enum": ["supports", "contradicts", "neutral"] },
+        "reason": { "type": "string" },
+        "decisive": { "type": "boolean", "description": "By itself enough to confirm the claim." }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["id", "kind", "provenance", "source", "summary", "revision", "time", "data"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^e[0-9]+$" },
+        "kind": { "type": "string" },
+        "provenance": {
+          "enum": ["self_reported", "observed", "independent", "attested"],
+          "description": "self_reported: the agent's own words or output it produced itself. observed: recorded by the harness that ran the agent. independent: queried by GroundClaim itself from an authoritative source. attested: independent with a verified signature (reserved; not produced by v0.1)."
+        },
+        "source": { "type": "string" },
+        "summary": { "type": "string" },
+        "revision": { "type": ["string", "null"] },
+        "time": { "type": ["string", "null"] },
+        "data": { "type": "object" }
+      }
+    }
+  }
+}
