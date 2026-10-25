@@ -25,7 +25,7 @@ Each claim gets a verdict — **confirmed**, **supported**, **contradicted**, **
 without letting the repository run anything, never executes commands found in traces, and has no runtime
 dependencies.
 
-Real output of [examples/demo.sh](examples/demo.sh) — an agent "fixes" a pager bug, pipes the failing tests
+Real output of [examples/demo.sh](examples/demo.sh) (needs pytest) — an agent "fixes" a pager bug, pipes the failing tests
 through `tail`, commits, and reports success:
 
 ```text

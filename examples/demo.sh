@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 # A small reproducible scenario for the README: an agent "fixes" a bug, its tests fail but it pipes them through
 # tail, and it claims success. Creates ./demo-repo and ./demo-run.jsonl, then runs groundclaim on them.
+# Needs git, Python with pytest, and groundclaim on PATH.
 set -euo pipefail
 export PYTHONDONTWRITEBYTECODE=1
+python -c "import pytest" 2>/dev/null || { echo "examples/demo.sh runs pytest: pip install pytest" >&2; exit 2; }
 rm -rf demo-repo demo-run.jsonl
 export GIT_AUTHOR_DATE="2026-10-01T12:00:00Z" GIT_COMMITTER_DATE="2026-10-01T12:00:00Z" GIT_AUTHOR_NAME=Demo GIT_AUTHOR_EMAIL=demo@example.invalid GIT_COMMITTER_NAME=Demo GIT_COMMITTER_EMAIL=demo@example.invalid
 git init -q -b main demo-repo && cd demo-repo
