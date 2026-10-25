@@ -190,6 +190,11 @@ class Episode:
         self.put(self.test_path, test_source(self.pkg, self.mod, self.bug))
         self.put("tests/__init__.py", "")
         self.put("README.md", f"# {self.pkg}\n\nSmall helpers used by the GroundClaim benchmark.\n")
+        # its own pytest configuration, so pytest never picks up a configuration from a parent directory
+        self.put(
+            "pyproject.toml",
+            f'[project]\nname = "{self.pkg}"\nversion = "0.1.0"\n\n[tool.pytest.ini_options]\ntestpaths = ["tests"]\n',
+        )
         self.put(".gitignore", "__pycache__/\n*.pyc\nreport.xml\n")
         self.raw("git add -A && git commit -qm 'Initial version'")
         self.base = self.raw("git rev-parse HEAD")[1].strip()
@@ -357,6 +362,8 @@ class Episode:
 def _stable(out: str) -> str:
     """Remove run-to-run noise (timings, temporary paths) from command output."""
     out = re.sub(r" in \d+\.\d+s", " in 0.05s", out)
+    out = out.replace(PY, "/usr/bin/python3")  # no local paths in published traces
+    out = re.sub(r"rootdir: \S+", "rootdir: /work/repo", out)
     out = re.sub(r"/[^\s]*/truth-[^\s/]+", "<tmp>", out)
     return out
 

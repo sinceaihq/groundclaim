@@ -220,6 +220,12 @@ python bench/summary.py bench/results/test
 python bench/extraction/score.py bench/extraction/realistic.jsonl
 ```
 
+The published 0.1 data was generated before each project got its own `pyproject.toml`; in some test episodes pytest
+therefore reported the generator's directory as its root (collected tests and results were unaffected), and local
+interpreter paths printed by `pytest -v` were replaced by placeholders before publication (re-running the evaluation
+on the sanitised data gives identical results). Regenerating with the current generator adds that file, so episodes
+are not byte-identical to the published ones.
+
 Generation runs real `git` and `pytest` (about 10 minutes for the test split on 8 cores); evaluation takes about a
 minute. Exact episode contents (paths, times) depend on the seed only, but command output can differ slightly between
 pytest versions.
