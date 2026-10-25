@@ -15,15 +15,16 @@ from .conftest import Workspace
 
 def _plant(ws: Workspace) -> Path:
     marker = ws.root / "pwned"
+    m = marker.as_posix()  # git runs these through sh, also on Windows
     for key, value in [
-        ("filter.evil.clean", f"touch {marker}-clean; cat"),
-        ("filter.evil.smudge", f"touch {marker}-smudge; cat"),
-        ("diff.evil.textconv", f"touch {marker}-textconv; cat"),
-        ("diff.external", f"touch {marker}-external"),
-        ("core.fsmonitor", f"touch {marker}-fsmonitor"),
-        ("core.pager", f"touch {marker}-pager"),
+        ("filter.evil.clean", f"touch {m}-clean; cat"),
+        ("filter.evil.smudge", f"touch {m}-smudge; cat"),
+        ("diff.evil.textconv", f"touch {m}-textconv; cat"),
+        ("diff.external", f"touch {m}-external"),
+        ("core.fsmonitor", f"touch {m}-fsmonitor"),
+        ("core.pager", f"touch {m}-pager"),
         ("log.showSignature", "true"),
-        ("gpg.program", f"touch {marker}-gpg"),
+        ("gpg.program", f"touch {m}-gpg"),
     ]:
         ws.git("config", key, value)
     (ws.path / ".gitattributes").write_text("*.py filter=evil diff=evil\n")

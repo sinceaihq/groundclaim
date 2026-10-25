@@ -274,7 +274,16 @@ def build_parser() -> argparse.ArgumentParser:
     return p
 
 
+def _never_fail_on_encoding() -> None:
+    # Reports contain symbols (✔ ✘) and agent text in any language; a console or pipe with a legacy encoding
+    # (Windows cp1252) must not turn that into a crash.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure") and (stream.encoding or "").lower().replace("-", "") != "utf8":
+            stream.reconfigure(errors="replace")
+
+
 def main(argv: list[str] | None = None) -> int:
+    _never_fail_on_encoding()
     args = build_parser().parse_args(argv)
     try:
         return int(args.func(args))

@@ -54,7 +54,7 @@ def test_message_from_trace_and_outputs(
     code, out, _ = run(["check", "--repo", str(ws.path), "--trace", str(trace), "-f", "markdown",
                         "--also", f"html={html_path}", "--also", f"json={tmp_path / 'r.json'}"], capsys)  # fmt: skip
     assert code == 0 and "<script>" not in out
-    page = html_path.read_text()
+    page = html_path.read_text(encoding="utf-8")
     assert "<script>" not in page and "&lt;script&gt;" in page and "default-src 'none'" in page
     code, out, _ = run(["render", str(tmp_path / "r.json"), "-f", "text"], capsys)
     assert code == 0 and "supported" in out
