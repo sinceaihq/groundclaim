@@ -92,3 +92,10 @@ def test_filenames_with_dots_do_not_split_sentences() -> None:
 def test_pr_numbers(text: str, number: int) -> None:
     (claim,) = extract_claims(text)
     assert claim.type == "pr_opened" and claim.details["pr"] == number
+
+
+def test_list_markers_are_not_part_of_the_claim() -> None:
+    text = "Summary:\n- I updated `a.py`.\n* All tests pass.\n2. Deployed to staging."
+    claims = extract_claims(text)
+    assert [c.text for c in claims] == ["I updated `a.py`.", "All tests pass.", "Deployed to staging."]
+    assert all(text[c.span[0] : c.span[1]] == c.text for c in claims)

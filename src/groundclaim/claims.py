@@ -120,6 +120,9 @@ POSITIVE_NEGATIVES_RE = re.compile(
 )
 
 
+LIST_MARKER_RE = re.compile(r"(?:[-*+•]|\d{1,3}[.)])\s+")
+
+
 def _blank_asides(text: str, at: int) -> str:
     """Blank out parenthesised asides in ``text`` except the one containing offset ``at``."""
     return ASIDE_RE.sub(lambda p: p.group() if p.start() <= at < p.end() else " " * len(p.group()), text)
@@ -132,7 +135,12 @@ def _sentences(text: str) -> Iterator[tuple[int, int, str]]:
         chunk = text[pos:end]
         if chunk.strip():
             start = pos + (len(chunk) - len(chunk.lstrip()))
-            yield start, start + len(chunk.strip()), chunk.strip()
+            body = chunk.strip()
+            marker = LIST_MARKER_RE.match(body)  # "- ", "* ", "• ", "1. " in front of a list item
+            if marker:
+                start, body = start + marker.end(), body[marker.end() :]
+            if body:
+                yield start, start + len(body), body
         if m:
             pos = m.end()
 
