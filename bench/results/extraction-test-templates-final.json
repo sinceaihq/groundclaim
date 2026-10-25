@@ -1,0 +1,66 @@
+{
+ "items": 1000,
+ "tp": 2202,
+ "fp": 0,
+ "fn": 0,
+ "precision": 1.0,
+ "recall": 1.0,
+ "per_type": {
+  "bug_fixed": {
+   "tp": 255,
+   "fp": 0,
+   "fn": 0
+  },
+  "build_succeeded": {
+   "tp": 34,
+   "fp": 0,
+   "fn": 0
+  },
+  "code_changed": {
+   "tp": 284,
+   "fp": 0,
+   "fn": 0
+  },
+  "committed": {
+   "tp": 457,
+   "fp": 0,
+   "fn": 0
+  },
+  "deployed": {
+   "tp": 47,
+   "fp": 0,
+   "fn": 0
+  },
+  "file_created": {
+   "tp": 39,
+   "fp": 0,
+   "fn": 0
+  },
+  "pr_opened": {
+   "tp": 59,
+   "fp": 0,
+   "fn": 0
+  },
+  "pushed": {
+   "tp": 63,
+   "fp": 0,
+   "fn": 0
+  },
+  "released": {
+   "tp": 59,
+   "fp": 0,
+   "fn": 0
+  },
+  "task_completed": {
+   "tp": 315,
+   "fp": 0,
+   "fn": 0
+  },
+  "tests_passed": {
+   "tp": 590,
+   "fp": 0,
+   "fn": 0
+  }
+ },
+ "errors": []
+}

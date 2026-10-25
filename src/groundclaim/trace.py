@@ -54,13 +54,28 @@ SECRET_RE = re.compile(
     r"\b(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|sk-[A-Za-z0-9_-]{20,}|xox[abprs]-[A-Za-z0-9-]{10,}"
     r"|AKIA[0-9A-Z]{16}|AIza[0-9A-Za-z_-]{30,}|hf_[A-Za-z0-9]{30,}|eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{5,})"
     r"|(?i:(?<=password=)|(?<=passwd=)|(?<=token=)|(?<=secret=)|(?<=api_key=)|(?<=apikey=))[^\s&'\"]+"
-    r"|-----BEGIN [A-Z ]*PRIVATE KEY-----[\s\S]*?-----END [A-Z ]*PRIVATE KEY-----"
-    r"|(?<=://)[^/\s:@]+:[^/\s@]+(?=@)"
+    r"|(?<=://)[^/\s:@]{1,200}:[^/\s@]{1,200}(?=@)"
 )
 
 
+PEM_BEGIN_RE = re.compile(r"-----BEGIN [A-Z ]{0,30}PRIVATE KEY-----")
+PEM_END_RE = re.compile(r"-----END [A-Z ]{0,30}PRIVATE KEY-----")
+
+
+def _redact_keys(text: str) -> str:
+    """Private key blocks, including truncated ones (no END line): everything up to the END line."""
+    out, pos = [], 0
+    while (m := PEM_BEGIN_RE.search(text, pos)) is not None:
+        end = PEM_END_RE.search(text, m.end())
+        out.append(text[pos : m.start()] + "[redacted]")
+        if end is None:
+            return "".join(out)
+        pos = end.end()
+    return "".join(out) + text[pos:]
+
+
 def redact(text: str) -> str:
-    return SECRET_RE.sub("[redacted]", text)
+    return SECRET_RE.sub("[redacted]", _redact_keys(text))
 
 
 def snippet(text: str, limit: int = 600) -> str:

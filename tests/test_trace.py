@@ -138,3 +138,24 @@ def test_output_is_redacted_in_events(tmp_path: Path) -> None:
                                         "output": "AKIAABCDEFGHIJKLMNOP"}])  # fmt: skip
     _, events = load_trace(p)
     assert "abcdef123456" not in (events[0].command or "") and "AKIA" not in events[0].output
+
+
+def test_truncated_private_key_is_redacted() -> None:
+    out = redact("key: -----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAA")
+    assert "b3Blbn" not in out and out.startswith("key: [redacted]")
+
+
+def test_adversarial_inputs_are_fast() -> None:
+    import time
+
+    from groundclaim.claims import extract_claims
+
+    t = time.monotonic()
+    extract_claims("All tests pass " + "a " * 100000 + ".")
+    extract_claims("Committed (" + "x) (" * 20000 + "y).")
+    extract_claims("1." * 50000)
+    redact("-----BEGIN RSA PRIVATE KEY-----" * 5000)
+    redact("https://a:b@" * 20000)
+    classify_command("pytest " + "| cat " * 20000)
+    parse_test_output("1 passed " * 50000)
+    assert time.monotonic() - t < 5

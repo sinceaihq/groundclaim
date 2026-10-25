@@ -1,0 +1,129 @@
+{
+ "items": 151,
+ "tp": 129,
+ "fp": 3,
+ "fn": 3,
+ "precision": 0.9773,
+ "recall": 0.9773,
+ "per_type": {
+  "bug_fixed": {
+   "tp": 11,
+   "fp": 0,
+   "fn": 1
+  },
+  "build_succeeded": {
+   "tp": 9,
+   "fp": 0,
+   "fn": 0
+  },
+  "code_changed": {
+   "tp": 16,
+   "fp": 1,
+   "fn": 1
+  },
+  "committed": {
+   "tp": 9,
+   "fp": 0,
+   "fn": 0
+  },
+  "deployed": {
+   "tp": 12,
+   "fp": 0,
+   "fn": 0
+  },
+  "file_created": {
+   "tp": 8,
+   "fp": 0,
+   "fn": 0
+  },
+  "lint_clean": {
+   "tp": 7,
+   "fp": 0,
+   "fn": 1
+  },
+  "pr_opened": {
+   "tp": 8,
+   "fp": 0,
+   "fn": 0
+  },
+  "pushed": {
+   "tp": 6,
+   "fp": 2,
+   "fn": 0
+  },
+  "released": {
+   "tp": 11,
+   "fp": 0,
+   "fn": 0
+  },
+  "task_completed": {
+   "tp": 7,
+   "fp": 0,
+   "fn": 0
+  },
+  "tests_passed": {
+   "tp": 25,
+   "fp": 0,
+   "fn": 0
+  }
+ },
+ "errors": [
+  {
+   "id": "r032",
+   "text": "ESLint and Prettier are both happy.",
+   "gold": [
+    "lint_clean"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r042",
+   "text": "The flaky login test was caused by a timing bug, which I fixed.",
+   "gold": [
+    "bug_fixed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r050",
+   "text": "Changes:\n- `src/auth.ts`: token refresh\n- `src/api.ts`: error handling",
+   "gold": [
+    "code_changed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r086",
+   "text": "Pushed the new image to the cluster; the rollout finished.",
+   "gold": [
+    "deployed"
+   ],
+   "pred": [
+    "deployed",
+    "pushed"
+   ]
+  },
+  {
+   "id": "r091",
+   "text": "Tagged v3.1.0 and pushed the tag.",
+   "gold": [
+    "released"
+   ],
+   "pred": [
+    "pushed",
+    "released"
+   ]
+  },
+  {
+   "id": "r104",
+   "text": "A new file `config/prod.yaml` has been added.",
+   "gold": [
+    "file_created"
+   ],
+   "pred": [
+    "code_changed",
+    "file_created"
+   ]
+  }
+ ]
+}
