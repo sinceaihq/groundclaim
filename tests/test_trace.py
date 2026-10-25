@@ -62,7 +62,9 @@ def test_parse_test_output(output: str, expected: dict[str, int] | None) -> None
 
 
 def test_redact() -> None:
-    text = "git push https://user:ghp_abcdefghijklmnopqrstuvwxyz0123@github.com/x token=abc123 sk-abcdefghijklmnopqrstuvwxyz"
+    # fake tokens, assembled at runtime so that no token-shaped literal is in the source
+    gh_token, sk_token = "ghp_" + "abcdefghijklmnopqrstuvwxyz0123", "sk-" + "abcdefghijklmnopqrstuvwxyz"
+    text = f"git push https://user:{gh_token}@github.com/x token=abc123 {sk_token}"
     out = redact(text)
     assert "ghp_" not in out and "abc123" not in out and "sk-abc" not in out
 
@@ -135,7 +137,7 @@ def test_unknown_trace(tmp_path: Path) -> None:
 
 def test_output_is_redacted_in_events(tmp_path: Path) -> None:
     p = _write(tmp_path, "run.jsonl", [{"type": "command", "command": "curl -H 'token=abcdef123456'", "exit_code": 0,
-                                        "output": "AKIAABCDEFGHIJKLMNOP"}])  # fmt: skip
+                                        "output": "AKIA" + "ABCDEFGHIJKLMNOP"}])  # fmt: skip
     _, events = load_trace(p)
     assert "abcdef123456" not in (events[0].command or "") and "AKIA" not in events[0].output
 
