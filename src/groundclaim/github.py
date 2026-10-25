@@ -100,6 +100,10 @@ class GitHub:
             self._cache[full] = (status, body)
         return self._cache[full]
 
+    def refresh(self) -> None:
+        """Forget cached answers (to poll for changes)."""
+        self._cache.clear()
+
     def check_runs(self, sha: str) -> list[dict[str, Any]]:
         status, body = self.get(f"/commits/{safe_ref(sha)}/check-runs", per_page=100)
         return list(body.get("check_runs", [])) if status == 200 and isinstance(body, dict) else []

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 import subprocess
 from pathlib import Path
 
@@ -27,7 +28,7 @@ def _plant(ws: Workspace) -> Path:
         ws.git("config", key, value)
     (ws.path / ".gitattributes").write_text("*.py filter=evil diff=evil\n")
     (ws.path / "app.py").write_text("def f():\n    return 2\n")
-    subprocess.run(["touch", "-d", "2001-01-01", str(ws.path / "app.py")], check=True)
+    os.utime(ws.path / "app.py", (978307200, 978307200))  # stat-dirty, so git status runs the clean filter
     return marker
 
 

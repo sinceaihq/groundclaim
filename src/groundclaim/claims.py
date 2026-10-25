@@ -29,7 +29,7 @@ PATH_RE = re.compile(
 )
 SHA_RE = re.compile(r"(?<![0-9A-Za-z])((?=[0-9a-f]*\d)(?=[0-9a-f]*[a-f])[0-9a-f]{7,40})(?![0-9A-Za-z])")
 VERSION_RE = re.compile(r"\bv?(\d+\.\d+(?:\.\d+)?(?:[-.]?(?:rc|a|b|alpha|beta|dev)\.?\d*)?)\b")
-PR_RE = re.compile(r"(?:\bPR|pull request|merge request|MR)\s*#?\s*(\d+)|/pull/(\d+)", re.IGNORECASE)
+PR_RE = re.compile(r"(?:\bPR|pull request|merge request|MR)\s*#?\s*(\d+)|/pull/(\d+)|#(\d+)", re.IGNORECASE)
 COUNT_RE = re.compile(
     r"\b(\d+)\s+(?:of\s+\d+\s+)?(?:(?:unit |integration |e2e )?tests?\b|passed\b)", re.IGNORECASE
 )
@@ -153,9 +153,10 @@ def _details(kind: ClaimType, sentence: str) -> dict[str, Any]:
         if m and m.group(1).lower() not in ("the", "remote", "origin", "github"):
             d["branch"] = m.group(1).rstrip(".,;:")
     if kind == "pr_opened":
+        # "PR #12", "pull request 12", ".../pull/12", or a "#12" anywhere in the sentence ("The PR is up: #12")
         m = PR_RE.search(sentence)
         if m:
-            d["pr"] = int(m.group(1) or m.group(2))
+            d["pr"] = int(m.group(1) or m.group(2) or m.group(3))
     if kind == "deployed":
         m = ENV_RE.search(sentence)
         if m:

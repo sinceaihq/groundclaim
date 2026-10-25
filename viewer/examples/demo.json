@@ -1,0 +1,209 @@
+{
+ "schema_version": "0.1",
+ "subject": {
+  "tool": "groundclaim 0.1.0",
+  "repository": "demo-repo",
+  "head": "d11e619bc2d742e2ae559ff48fb0faa419f8c287",
+  "branch": "main",
+  "base": "afde81f",
+  "uncommitted_files": 0,
+  "trace": "demo-run.jsonl (groundclaim)"
+ },
+ "assessments": [
+  {
+   "claim": {
+    "id": "c1",
+    "type": "bug_fixed",
+    "text": "Fixed the off-by-one bug in `src/pager.py`.",
+    "span": [
+     0,
+     43
+    ],
+    "details": {
+     "files": [
+      "src/pager.py"
+     ]
+    }
+   },
+   "verdict": "insufficient_evidence",
+   "reason": "src/pager.py changed since afde81f; but the latest test run fails (output of `pytest -q | tail -n 3`: 2 failed, 0 passed (its exit code is not the test runner's))",
+   "links": [
+    {
+     "evidence": "e1",
+     "stance": "supports",
+     "reason": "src/pager.py changed since afde81f",
+     "decisive": true
+    },
+    {
+     "evidence": "e2",
+     "stance": "supports",
+     "reason": "the trace shows an edit of src/pager.py",
+     "decisive": false
+    },
+    {
+     "evidence": "e3",
+     "stance": "neutral",
+     "reason": "tests fail after the change: output of `pytest -q | tail -n 3`: 2 failed, 0 passed (its exit code is not the test runner's)",
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "claim": {
+    "id": "c2",
+    "type": "tests_passed",
+    "text": "All 2 tests pass.",
+    "span": [
+     44,
+     61
+    ],
+    "details": {
+     "count": 2
+    }
+   },
+   "verdict": "contradicted",
+   "reason": "output of `pytest -q | tail -n 3`: 2 failed, 0 passed (its exit code is not the test runner's)",
+   "links": [
+    {
+     "evidence": "e3",
+     "stance": "contradicts",
+     "reason": "output of `pytest -q | tail -n 3`: 2 failed, 0 passed (its exit code is not the test runner's)",
+     "decisive": false
+    }
+   ]
+  },
+  {
+   "claim": {
+    "id": "c3",
+    "type": "committed",
+    "text": "I committed the fix.",
+    "span": [
+     62,
+     82
+    ],
+    "details": {}
+   },
+   "verdict": "confirmed",
+   "reason": "1 new commit(s) since afde81f",
+   "links": [
+    {
+     "evidence": "e4",
+     "stance": "supports",
+     "reason": "`git commit -am 'Fix page count'` exited 0",
+     "decisive": false
+    },
+    {
+     "evidence": "e5",
+     "stance": "supports",
+     "reason": "1 new commit(s) since afde81f",
+     "decisive": true
+    }
+   ]
+  },
+  {
+   "claim": {
+    "id": "c4",
+    "type": "code_changed",
+    "text": "I also updated `docs/pager.md`.",
+    "span": [
+     83,
+     114
+    ],
+    "details": {
+     "files": [
+      "docs/pager.md"
+     ]
+    }
+   },
+   "verdict": "contradicted",
+   "reason": "docs/pager.md was not changed since afde81f",
+   "links": [
+    {
+     "evidence": "e6",
+     "stance": "contradicts",
+     "reason": "docs/pager.md was not changed since afde81f",
+     "decisive": false
+    }
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "id": "e1",
+   "kind": "git_diff",
+   "provenance": "independent",
+   "source": "git",
+   "summary": "src/pager.py: changed since afde81f",
+   "revision": "d11e619bc2d742e2ae559ff48fb0faa419f8c287",
+   "time": null,
+   "data": {}
+  },
+  {
+   "id": "e2",
+   "kind": "file_write",
+   "provenance": "observed",
+   "source": "demo-run.jsonl#1",
+   "summary": "the agent edited src/pager.py",
+   "revision": null,
+   "time": null,
+   "data": {
+    "path": "src/pager.py"
+   }
+  },
+  {
+   "id": "e3",
+   "kind": "command",
+   "provenance": "observed",
+   "source": "demo-run.jsonl#2",
+   "summary": "pytest -q | tail -n 3 → exit 0",
+   "revision": null,
+   "time": null,
+   "data": {
+    "command": "pytest -q | tail -n 3",
+    "exit_code": 0,
+    "output_tail": "FAILED tests/test_pager.py::test_exact - assert 0 == 1\nFAILED tests/test_pager.py::test_partial - assert 1 == 2\n2 failed in 0.03s",
+    "counts": {
+     "failed": 2
+    },
+    "flags": [
+     "exit_masked"
+    ]
+   }
+  },
+  {
+   "id": "e4",
+   "kind": "command",
+   "provenance": "observed",
+   "source": "demo-run.jsonl#3",
+   "summary": "git commit -am 'Fix page count' → exit 0",
+   "revision": null,
+   "time": null,
+   "data": {
+    "command": "git commit -am 'Fix page count'",
+    "exit_code": 0,
+    "output_tail": ""
+   }
+  },
+  {
+   "id": "e5",
+   "kind": "git_commit",
+   "provenance": "independent",
+   "source": "git",
+   "summary": "1 commit(s) since afde81f",
+   "revision": "d11e619bc2d742e2ae559ff48fb0faa419f8c287",
+   "time": null,
+   "data": {}
+  },
+  {
+   "id": "e6",
+   "kind": "git_diff",
+   "provenance": "independent",
+   "source": "git",
+   "summary": "docs/pager.md: not changed since afde81f",
+   "revision": "d11e619bc2d742e2ae559ff48fb0faa419f8c287",
+   "time": null,
+   "data": {}
+  }
+ ],
+ "warnings": []
+}

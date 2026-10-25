@@ -105,3 +105,21 @@ def test_markdown_escapes_agent_text() -> None:
     md = to_markdown(report)
     assert "<img" not in md and "![x]" not in md and "\\|" in md
     assert "<img" not in to_html(report)
+
+
+def test_wait_for_checks_polls_until_finished(monkeypatch: pytest.MonkeyPatch) -> None:
+    from groundclaim import cli
+    from groundclaim.github import GitHub
+
+    calls = {"n": 0}
+
+    def transport(path: str) -> tuple[int, object]:
+        calls["n"] += 1
+        status = "completed" if calls["n"] >= 3 else "in_progress"
+        return 200, {
+            "check_runs": [{"name": "test", "status": status}, {"name": "me", "status": "in_progress"}]
+        }
+
+    monkeypatch.setattr(cli.time, "sleep", lambda _s: None)
+    cli._wait_for_checks(GitHub("o/r", transport), "abc1234", {"me"}, timeout=60)
+    assert calls["n"] == 3

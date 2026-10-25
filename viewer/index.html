@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>GroundClaim report viewer</title>
+<link rel="stylesheet" href="viewer.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%231d7a3a'/%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' stroke='white' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>GroundClaim report viewer</h1>
+    <p class="muted">Open a report from <code>groundclaim check -f json</code>. It is read in this page only — nothing is uploaded.</p>
+  </div>
+  <a class="muted" href="https://github.com/sinceaihq/groundclaim">github.com/sinceaihq/groundclaim</a>
+</header>
+<main>
+  <section class="controls" aria-label="Choose a report">
+    <label class="drop" id="drop">
+      <input type="file" id="file" accept=".json,application/json" hidden>
+      <strong>Drop a report here</strong>
+      <span>or click to choose a JSON file</span>
+    </label>
+    <div>
+      <p class="label">Examples (from the benchmark and examples/demo.sh)</p>
+      <div id="examples" class="examples"></div>
+    </div>
+  </section>
+  <p id="error" class="error" role="alert" hidden></p>
+  <section id="report" aria-live="polite"></section>
+</main>
+<footer class="muted">Verdicts: ✔ confirmed — independent evidence; ◐ supported — observed evidence only; ✘ contradicted; ? insufficient evidence; – unverifiable. <a href="https://github.com/sinceaihq/groundclaim/blob/main/docs/RULES.md">How verdicts are decided</a>.</footer>
+<script src="viewer.js"></script>
+</body>
+</html>

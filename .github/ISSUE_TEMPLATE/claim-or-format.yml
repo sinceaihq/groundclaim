@@ -1,0 +1,15 @@
+name: Missed claim or new trace format
+description: A completion claim GroundClaim did not find, or an agent / trace format it should read.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: text
+    attributes:
+      label: Example
+      description: The sentence that was missed, or a small anonymised sample of the trace format.
+    validations: { required: true }
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+      description: The claim type (tests_passed, deployed, ...) or the events GroundClaim should read.

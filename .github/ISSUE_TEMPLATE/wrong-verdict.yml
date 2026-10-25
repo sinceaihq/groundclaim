@@ -1,0 +1,37 @@
+name: Wrong verdict
+description: GroundClaim confirmed something that did not happen, or contradicted something that did.
+labels: [verdict]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! A false **confirmation** is the most serious kind of error — please say so in the title.
+        Do not paste secrets, private code or personal data; a minimal reproduction with made-up content is best.
+  - type: textarea
+    id: claim
+    attributes:
+      label: The claim
+      description: The sentence from the agent's message.
+    validations: { required: true }
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: Verdict GroundClaim gave
+      options: [confirmed, supported, contradicted, insufficient_evidence, unverifiable]
+    validations: { required: true }
+  - type: textarea
+    id: truth
+    attributes:
+      label: What actually happened
+    validations: { required: true }
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence sources and report
+      description: The command you ran (git / trace / reports / GitHub) and the JSON report, with anything private removed.
+      render: shell
+  - type: input
+    id: version
+    attributes:
+      label: GroundClaim version
+      placeholder: groundclaim --version

@@ -257,3 +257,30 @@ def test_task_completed_follows_other_claims(ws: Workspace) -> None:
 def test_no_sources_means_unverifiable(tmp_path: Path) -> None:
     v = verify("All tests pass. Deployed to production.", Sources()).assessments
     assert [a.verdict for a in v] == ["unverifiable", "unverifiable"]
+
+
+def test_ignored_checks_are_left_out(ws: Workspace, fixture_file: Callable[[dict[str, Any]], Path]) -> None:
+    head = ws.rev()
+    gh = GitHub("o/r", fixture_transport(fixture_file({f"/repos/o/r/commits/{head}/check-runs": {"status": 200, "body": {
+        "check_runs": [{"id": 1, "name": "test", "status": "completed", "conclusion": "success"},
+                       {"id": 2, "name": "groundclaim test", "status": "in_progress", "conclusion": None}]}}})))  # fmt: skip
+    s = src(ws, trace=False, github=gh, ignore_checks={"groundclaim test"})
+    report = verify("All tests pass.", s)
+    assert report.assessments[0].verdict == "confirmed"
+    assert all("groundclaim test" not in e.summary for e in report.evidence)
+
+
+def test_pr_number_found_anywhere_end_to_end(
+    ws: Workspace, fixture_file: Callable[[dict[str, Any]], Path]
+) -> None:
+    # Regression: "The pull request is up: #8." once lost its number, and the PR from the current branch (#7)
+    # then confirmed the claim. The number must be extracted and checked.
+    pr = {"number": 7, "state": "open", "head": {"sha": ws.rev(), "label": "o:main"}}
+    gh = GitHub("o/r", fixture_transport(fixture_file({
+        "/repos/o/r/pulls/7": {"status": 200, "body": pr}, "/repos/o/r/pulls": {"status": 200, "body": [pr]}})))  # fmt: skip
+    assert verdicts("The pull request is up: #8.", src(ws, trace=False, github=gh)) == [
+        ("pr_opened", "contradicted")
+    ]
+    assert verdicts("The pull request is up: #7.", src(ws, trace=False, github=gh)) == [
+        ("pr_opened", "confirmed")
+    ]

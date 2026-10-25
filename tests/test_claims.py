@@ -77,3 +77,18 @@ def test_spans_point_at_the_sentence() -> None:
 def test_filenames_with_dots_do_not_split_sentences() -> None:
     (claim,) = extract_claims("I updated pager.py and utils.py to fix the parser.")
     assert claim.details["files"] == ["pager.py", "utils.py"]
+
+
+@pytest.mark.parametrize(
+    ("text", "number"),
+    [
+        ("The pull request is up: #119.", 119),
+        ("Opened a PR: https://github.com/o/r/pull/57", 57),
+        ("PR #19 is open.", 19),
+        ("I opened pull request 8.", 8),
+        ("Submitted PR #4 for review (closes #2).", 4),
+    ],
+)
+def test_pr_numbers(text: str, number: int) -> None:
+    (claim,) = extract_claims(text)
+    assert claim.type == "pr_opened" and claim.details["pr"] == number

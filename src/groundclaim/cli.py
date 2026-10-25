@@ -11,6 +11,7 @@ import os
 import shlex
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 from . import __version__
@@ -52,6 +53,25 @@ def _run_tests(command: str, repo: Repo | None, cwd: Path, timeout: int) -> Comm
         code, out = 127, str(exc)
     head = repo.head() if repo else None
     return CommandRun(command, code, out[-20000:], head)
+
+
+def _wait_for_checks(github: GitHub, sha: str, ignore: set[str], timeout: int, interval: float = 15) -> None:
+    """Wait until every CI check run on ``sha`` (except ``ignore``) has finished, or ``timeout`` seconds pass."""
+    deadline = time.monotonic() + timeout
+    while True:
+        try:
+            github.refresh()
+            pending = [r.get("name", "?") for r in github.check_runs(sha)
+                       if r.get("name") not in ignore and r.get("status") != "completed"]  # fmt: skip
+        except GitHubError as exc:
+            print(f"groundclaim: cannot read check runs: {exc}", file=sys.stderr)
+            return
+        if not pending:
+            return
+        if time.monotonic() >= deadline:
+            print(f"groundclaim: still running after {timeout}s: {', '.join(pending[:5])}", file=sys.stderr)
+            return
+        time.sleep(min(interval, max(0.0, deadline - time.monotonic())))
 
 
 def cmd_check(args: argparse.Namespace) -> int:
@@ -111,10 +131,14 @@ def cmd_check(args: argparse.Namespace) -> int:
             print(f"groundclaim: {exc}", file=sys.stderr)
             return 2
 
+    ignore = set(args.ignore_check or [])
+    if github and repo and args.wait_for_checks > 0:
+        _wait_for_checks(github, repo.head(), ignore, args.wait_for_checks)
     runs = [_run_tests(c, repo, repo_dir, args.run_timeout) for c in args.run_tests or []]
     sources = Sources(
         repo=repo, base=args.base, reports=reports, reports_trusted=args.trusted_reports, events=events,
         trace_name=trace_name, github=github, workspace=Path(args.workspace) if args.workspace else None, runs=runs,
+        ignore_checks=ignore,
     )  # fmt: skip
     report = verify(message, sources, {"tool": f"groundclaim {__version__}"})
     out = render(
@@ -195,6 +219,19 @@ def build_parser() -> argparse.ArgumentParser:
         help="query GitHub (checks, PRs, deployments, releases); token from GITHUB_TOKEN",
     )
     ev.add_argument("--github-fixture", help=argparse.SUPPRESS)
+    ev.add_argument(
+        "--wait-for-checks",
+        type=int,
+        default=0,
+        metavar="SECONDS",
+        help="wait up to this long for running CI checks on the commit to finish",
+    )
+    ev.add_argument(
+        "--ignore-check",
+        action="append",
+        metavar="NAME",
+        help="leave this CI check out (e.g. the job running GroundClaim); repeatable",
+    )
     ev.add_argument(
         "--workspace", help="directory where claimed output files are looked up (default: the repository)"
     )

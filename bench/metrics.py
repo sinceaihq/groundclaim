@@ -8,7 +8,8 @@ For claims that are true:
   * false rejection rate (FRR) — verdict ``contradicted``. The other headline error.
   * confirmation rate — verdict ``confirmed`` (how often a true claim is fully proven).
   * acceptance rate — ``confirmed`` or ``supported``.
-``insufficient_evidence`` and ``unverifiable`` are abstentions: neither error.
+``insufficient_evidence`` and ``unverifiable`` are abstentions: neither error. In the end-to-end evaluation a gold
+claim the extractor did not find has the verdict ``missed``, also an abstention.
 
 95 % intervals are percentile bootstrap over scenarios (1000 resamples, fixed seed).
 """

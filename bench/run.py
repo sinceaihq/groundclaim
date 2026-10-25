@@ -96,6 +96,14 @@ def main() -> None:
                 rows.append({"id": scn["id"], "family": scn["family"], "type": claim.type, "truth": g["truth"],
                              "note": g["note"], "method": "groundclaim", "condition": cname, "verdict": a_.verdict,
                              "reason": a_.reason})  # fmt: skip
+            # end to end: claims extracted from the message (as in real use), matched to gold claims by type and span
+            e2e = verify(scn["message"], src).assessments
+            for claim, g in claims:
+                hit = next((x for x in e2e if x.claim.type == claim.type and x.claim.span[0] < g["span"][1]
+                            and g["span"][0] < x.claim.span[1]), None)  # fmt: skip
+                rows.append({"id": scn["id"], "family": scn["family"], "type": claim.type, "truth": g["truth"],
+                             "note": g["note"], "method": "groundclaim-e2e", "condition": cname,
+                             "verdict": hit.verdict if hit else "missed", "reason": hit.reason if hit else ""})  # fmt: skip
             for bname, fn in BASELINES.items():
                 src = sources_for(root, scn, cond)
                 for claim, g in claims:

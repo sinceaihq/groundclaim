@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: test (${{ matrix.os }}, py${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python: ["3.10", "3.11", "3.12", "3.13"]
+        include:
+          - { os: macos-latest, python: "3.13" }
+          - { os: windows-latest, python: "3.13" }
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with: { python-version: "${{ matrix.python }}" }
+      - run: pip install -e ".[dev]"
+      - run: pytest -q
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with: { python-version: "3.13" }
+      - run: pip install -e ".[dev]"
+      - run: ruff format --check .
+      - run: ruff check .
+      - run: mypy
+
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with: { python-version: "3.13" }
+      - run: pip install build
+      - run: python -m build
+      - name: Install the wheel in a clean environment and run it
+        run: |
+          python -m venv /tmp/clean
+          /tmp/clean/bin/pip install dist/*.whl
+          cd /tmp
+          /tmp/clean/bin/groundclaim --version
+          /tmp/clean/bin/groundclaim schema > /dev/null
+          /tmp/clean/bin/groundclaim claims "All tests pass. Deployed to production."
+
+  # GroundClaim checks a claim about this very commit against this workflow's own check runs.
+  self-check:
+    name: groundclaim self-check
+    if: github.event_name == 'push'
+    needs: [test, lint, package]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      checks: read
+      statuses: read
+    steps:
+      - uses: actions/checkout@v7
+        with: { fetch-depth: 0 }
+      - uses: ./
+        with:
+          message: The test suite passes.
+          require: confirmed
+          wait-for-checks: "300"
+          ignore-checks: groundclaim self-check

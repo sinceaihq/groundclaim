@@ -1,0 +1,5203 @@
+{
+ "summary": {
+  "groundclaim | full": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.0,
+   "false_acceptance_rate": 0.0304,
+   "catch_rate": 0.6781,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.592,
+   "acceptance_rate": 0.939,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.0,
+     0.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.6464,
+     0.7083
+    ],
+    "confirmation_rate": [
+     0.563,
+     0.623
+    ]
+   }
+  },
+  "groundclaim | git+github": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.0,
+   "false_acceptance_rate": 0.1077,
+   "catch_rate": 0.4816,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.592,
+   "acceptance_rate": 0.7605,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.0,
+     0.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.4465,
+     0.5176
+    ],
+    "confirmation_rate": [
+     0.563,
+     0.623
+    ]
+   }
+  },
+  "groundclaim | git+trace": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.0,
+   "false_acceptance_rate": 0.0697,
+   "catch_rate": 0.5387,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.5255,
+   "acceptance_rate": 0.9208,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.0,
+     0.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.5045,
+     0.5729
+    ],
+    "confirmation_rate": [
+     0.5004,
+     0.5525
+    ]
+   }
+  },
+  "groundclaim | trace only": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.0,
+   "false_acceptance_rate": 0.1673,
+   "catch_rate": 0.256,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.0,
+   "acceptance_rate": 0.9098,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.0,
+     0.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.2282,
+     0.2839
+    ],
+    "confirmation_rate": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "groundclaim-e2e | full": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.0,
+   "false_acceptance_rate": 0.0304,
+   "catch_rate": 0.6781,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.592,
+   "acceptance_rate": 0.939,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.0,
+     0.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.6464,
+     0.7083
+    ],
+    "confirmation_rate": [
+     0.563,
+     0.623
+    ]
+   }
+  },
+  "groundclaim-e2e | git+github": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.0,
+   "false_acceptance_rate": 0.1077,
+   "catch_rate": 0.4816,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.592,
+   "acceptance_rate": 0.7605,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.0,
+     0.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.4465,
+     0.5176
+    ],
+    "confirmation_rate": [
+     0.563,
+     0.623
+    ]
+   }
+  },
+  "groundclaim-e2e | git+trace": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.0,
+   "false_acceptance_rate": 0.0697,
+   "catch_rate": 0.5387,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.5255,
+   "acceptance_rate": 0.9208,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.0,
+     0.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.5045,
+     0.5729
+    ],
+    "confirmation_rate": [
+     0.5004,
+     0.5525
+    ]
+   }
+  },
+  "groundclaim-e2e | trace only": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.0,
+   "false_acceptance_rate": 0.1673,
+   "catch_rate": 0.256,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.0,
+   "acceptance_rate": 0.9098,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.0,
+     0.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.2282,
+     0.2839
+    ],
+    "confirmation_rate": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "trace_keywords | full": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.4385,
+   "false_acceptance_rate": 0.4385,
+   "catch_rate": 0.1825,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.9454,
+   "acceptance_rate": 0.9454,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.4063,
+     0.47
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.1565,
+     0.2081
+    ],
+    "confirmation_rate": [
+     0.9306,
+     0.959
+    ]
+   }
+  },
+  "trace_keywords | git+github": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.0,
+   "false_acceptance_rate": 0.0,
+   "catch_rate": 0.0,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.0,
+   "acceptance_rate": 0.0,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.0,
+     0.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.0,
+     0.0
+    ],
+    "confirmation_rate": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "trace_keywords | git+trace": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.4385,
+   "false_acceptance_rate": 0.4385,
+   "catch_rate": 0.1825,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.9454,
+   "acceptance_rate": 0.9454,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.4063,
+     0.47
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.1565,
+     0.2081
+    ],
+    "confirmation_rate": [
+     0.9306,
+     0.959
+    ]
+   }
+  },
+  "trace_keywords | trace only": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.4385,
+   "false_acceptance_rate": 0.4385,
+   "catch_rate": 0.1825,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.9454,
+   "acceptance_rate": 0.9454,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.4063,
+     0.47
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.1565,
+     0.2081
+    ],
+    "confirmation_rate": [
+     0.9306,
+     0.959
+    ]
+   }
+  },
+  "trust_all | full": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 1.0,
+   "false_acceptance_rate": 1.0,
+   "catch_rate": 0.0,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 1.0,
+   "acceptance_rate": 1.0,
+   "ci95": {
+    "false_confirmation_rate": [
+     1.0,
+     1.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.0,
+     0.0
+    ],
+    "confirmation_rate": [
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "trust_all | git+github": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 1.0,
+   "false_acceptance_rate": 1.0,
+   "catch_rate": 0.0,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 1.0,
+   "acceptance_rate": 1.0,
+   "ci95": {
+    "false_confirmation_rate": [
+     1.0,
+     1.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.0,
+     0.0
+    ],
+    "confirmation_rate": [
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "trust_all | git+trace": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 1.0,
+   "false_acceptance_rate": 1.0,
+   "catch_rate": 0.0,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 1.0,
+   "acceptance_rate": 1.0,
+   "ci95": {
+    "false_confirmation_rate": [
+     1.0,
+     1.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.0,
+     0.0
+    ],
+    "confirmation_rate": [
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "trust_all | trace only": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 1.0,
+   "false_acceptance_rate": 1.0,
+   "catch_rate": 0.0,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 1.0,
+   "acceptance_rate": 1.0,
+   "ci95": {
+    "false_confirmation_rate": [
+     1.0,
+     1.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.0,
+     0.0
+    ],
+    "confirmation_rate": [
+     1.0,
+     1.0
+    ]
+   }
+  }
+ },
+ "detail": {
+  "groundclaim | full": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3793,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4839,
+     "acceptance_rate": 0.4839
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.3333,
+     "acceptance_rate": 1.0
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4483,
+     "acceptance_rate": 1.0
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.4,
+     "catch_rate": 0.2,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.5
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7636,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.2,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5,
+     "acceptance_rate": 0.5
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.22,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5556,
+     "acceptance_rate": 0.5556
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7812,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4722,
+     "acceptance_rate": 1.0
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0923,
+     "catch_rate": 0.3077,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5439,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.2571,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0186,
+     "catch_rate": 0.5108,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0749,
+     "acceptance_rate": 0.809
+    }
+   },
+   "verdicts": {
+    "false": {
+     "insufficient_evidence": 230,
+     "contradicted": 535,
+     "supported": 24
+    },
+    "true": {
+     "confirmed": 650,
+     "supported": 381,
+     "insufficient_evidence": 67
+    }
+   }
+  },
+  "groundclaim | git+github": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3793,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4839,
+     "acceptance_rate": 0.4839
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.3947,
+     "catch_rate": 0.6053,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.3333,
+     "acceptance_rate": 0.6667
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3404,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4483,
+     "acceptance_rate": 0.4483
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.4,
+     "catch_rate": 0.2,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.5
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.2545,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.2,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5,
+     "acceptance_rate": 0.5
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.22,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5556,
+     "acceptance_rate": 0.5556
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.2812,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4722,
+     "acceptance_rate": 0.4722
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.1077,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.4561,
+     "catch_rate": 0.0877,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.092,
+     "catch_rate": 0.908,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0774,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0749,
+     "acceptance_rate": 0.0749
+    }
+   },
+   "verdicts": {
+    "false": {
+     "insufficient_evidence": 324,
+     "contradicted": 380,
+     "supported": 85
+    },
+    "true": {
+     "confirmed": 650,
+     "supported": 185,
+     "insufficient_evidence": 263
+    }
+   }
+  },
+  "groundclaim | git+trace": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3793,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4839,
+     "acceptance_rate": 0.4839
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5833,
+     "acceptance_rate": 0.5833
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.5,
+     "catch_rate": 0.2895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.7632,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.3333,
+     "acceptance_rate": 1.0
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4483,
+     "acceptance_rate": 1.0
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.4,
+     "catch_rate": 0.2,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.5
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5758,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5439,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3333,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.8269,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.375,
+     "catch_rate": 0.5,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.8571,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7636,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.2,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5,
+     "acceptance_rate": 0.5
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.22,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5556,
+     "acceptance_rate": 0.5556
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7812,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4722,
+     "acceptance_rate": 1.0
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0923,
+     "catch_rate": 0.3077,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5439,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.2571,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.5,
+     "catch_rate": 0.2895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5758,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3333,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.375,
+     "catch_rate": 0.5,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.6667,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0186,
+     "catch_rate": 0.4334,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.7341
+    }
+   },
+   "verdicts": {
+    "false": {
+     "insufficient_evidence": 309,
+     "contradicted": 425,
+     "supported": 55
+    },
+    "true": {
+     "supported": 434,
+     "confirmed": 577,
+     "insufficient_evidence": 87
+    }
+   }
+  },
+  "groundclaim | trace only": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.4839
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.5833
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.3667,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.7105,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.5,
+     "catch_rate": 0.2895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.6596,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.4,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.5
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5758,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3333,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.375,
+     "catch_rate": 0.4375,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5091,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.5
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.5556
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.6923,
+     "catch_rate": 0.2,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.4561,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.2571,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.3548,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.1656,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.5,
+     "catch_rate": 0.2895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5758,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3333,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.375,
+     "catch_rate": 0.4375,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.1393,
+     "catch_rate": 0.4334,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.7341
+    }
+   },
+   "verdicts": {
+    "false": {
+     "insufficient_evidence": 428,
+     "contradicted": 202,
+     "supported": 132,
+     "unverifiable": 27
+    },
+    "true": {
+     "supported": 999,
+     "unverifiable": 12,
+     "insufficient_evidence": 87
+    }
+   }
+  },
+  "groundclaim-e2e | full": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3793,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4839,
+     "acceptance_rate": 0.4839
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.3333,
+     "acceptance_rate": 1.0
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4483,
+     "acceptance_rate": 1.0
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.4,
+     "catch_rate": 0.2,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.5
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7636,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.2,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5,
+     "acceptance_rate": 0.5
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.22,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5556,
+     "acceptance_rate": 0.5556
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7812,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4722,
+     "acceptance_rate": 1.0
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0923,
+     "catch_rate": 0.3077,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5439,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.2571,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0186,
+     "catch_rate": 0.5108,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0749,
+     "acceptance_rate": 0.809
+    }
+   },
+   "verdicts": {
+    "false": {
+     "insufficient_evidence": 230,
+     "contradicted": 535,
+     "supported": 24
+    },
+    "true": {
+     "confirmed": 650,
+     "supported": 381,
+     "insufficient_evidence": 67
+    }
+   }
+  },
+  "groundclaim-e2e | git+github": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3793,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4839,
+     "acceptance_rate": 0.4839
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.3947,
+     "catch_rate": 0.6053,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.3333,
+     "acceptance_rate": 0.6667
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3404,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4483,
+     "acceptance_rate": 0.4483
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.4,
+     "catch_rate": 0.2,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.5
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.2545,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.2,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5,
+     "acceptance_rate": 0.5
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.22,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5556,
+     "acceptance_rate": 0.5556
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.2812,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4722,
+     "acceptance_rate": 0.4722
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.1077,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.4561,
+     "catch_rate": 0.0877,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.092,
+     "catch_rate": 0.908,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0774,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0749,
+     "acceptance_rate": 0.0749
+    }
+   },
+   "verdicts": {
+    "false": {
+     "insufficient_evidence": 324,
+     "contradicted": 380,
+     "supported": 85
+    },
+    "true": {
+     "confirmed": 650,
+     "supported": 185,
+     "insufficient_evidence": 263
+    }
+   }
+  },
+  "groundclaim-e2e | git+trace": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3793,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4839,
+     "acceptance_rate": 0.4839
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5833,
+     "acceptance_rate": 0.5833
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.5,
+     "catch_rate": 0.2895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.7632,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.3333,
+     "acceptance_rate": 1.0
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4483,
+     "acceptance_rate": 1.0
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.4,
+     "catch_rate": 0.2,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.5
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5758,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5439,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3333,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.8269,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.375,
+     "catch_rate": 0.5,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.8571,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7636,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.2,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5,
+     "acceptance_rate": 0.5
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.22,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5556,
+     "acceptance_rate": 0.5556
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7812,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4722,
+     "acceptance_rate": 1.0
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0923,
+     "catch_rate": 0.3077,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5439,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.2571,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.5,
+     "catch_rate": 0.2895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 1.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5758,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3333,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.375,
+     "catch_rate": 0.5,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.6667,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0186,
+     "catch_rate": 0.4334,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.7341
+    }
+   },
+   "verdicts": {
+    "false": {
+     "insufficient_evidence": 309,
+     "contradicted": 425,
+     "supported": 55
+    },
+    "true": {
+     "supported": 434,
+     "confirmed": 577,
+     "insufficient_evidence": 87
+    }
+   }
+  },
+  "groundclaim-e2e | trace only": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.4839
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.5833
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.3667,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.7105,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.5,
+     "catch_rate": 0.2895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.6596,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.4,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.5
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5758,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3333,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.375,
+     "catch_rate": 0.4375,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5091,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.5
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.5556
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.6923,
+     "catch_rate": 0.2,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.4561,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.2571,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.3548,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.1656,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.5,
+     "catch_rate": 0.2895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5758,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.3333,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.375,
+     "catch_rate": 0.4375,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.1393,
+     "catch_rate": 0.4334,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.7341
+    }
+   },
+   "verdicts": {
+    "false": {
+     "insufficient_evidence": 428,
+     "contradicted": 202,
+     "supported": 132,
+     "unverifiable": 27
+    },
+    "true": {
+     "supported": 999,
+     "unverifiable": 12,
+     "insufficient_evidence": 87
+    }
+   }
+  },
+  "trace_keywords | full": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4839,
+     "acceptance_rate": 0.4839
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5833,
+     "acceptance_rate": 0.5833
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 0.7105,
+     "false_acceptance_rate": 0.7105,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 0.5,
+     "false_acceptance_rate": 0.5,
+     "catch_rate": 0.2895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 0.6596,
+     "false_acceptance_rate": 0.6596,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 0.4,
+     "false_acceptance_rate": 0.4,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5,
+     "acceptance_rate": 0.5
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 0.2105,
+     "false_acceptance_rate": 0.2105,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 0.2121,
+     "false_acceptance_rate": 0.2121,
+     "catch_rate": 0.3636,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 0.3889,
+     "false_acceptance_rate": 0.3889,
+     "catch_rate": 0.3333,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 0.8125,
+     "false_acceptance_rate": 0.8125,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5091,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 0.8,
+     "false_acceptance_rate": 0.8,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 0.78,
+     "false_acceptance_rate": 0.78,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7188,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 0.8923,
+     "false_acceptance_rate": 0.8923,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 0.4561,
+     "false_acceptance_rate": 0.4561,
+     "catch_rate": 0.4561,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 0.1656,
+     "false_acceptance_rate": 0.1656,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 0.5,
+     "false_acceptance_rate": 0.5,
+     "catch_rate": 0.2895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 0.4444,
+     "false_acceptance_rate": 0.4444,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 0.2121,
+     "false_acceptance_rate": 0.2121,
+     "catch_rate": 0.3636,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 0.3889,
+     "false_acceptance_rate": 0.3889,
+     "catch_rate": 0.3333,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 0.8125,
+     "false_acceptance_rate": 0.8125,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 0.5077,
+     "false_acceptance_rate": 0.5077,
+     "catch_rate": 0.3189,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.8352,
+     "acceptance_rate": 0.8352
+    }
+   },
+   "verdicts": {
+    "false": {
+     "insufficient_evidence": 299,
+     "contradicted": 144,
+     "confirmed": 346
+    },
+    "true": {
+     "confirmed": 1038,
+     "insufficient_evidence": 60
+    }
+   }
+  },
+  "trace_keywords | git+github": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    }
+   },
+   "verdicts": {
+    "false": {
+     "insufficient_evidence": 789
+    },
+    "true": {
+     "insufficient_evidence": 1098
+    }
+   }
+  },
+  "trace_keywords | git+trace": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4839,
+     "acceptance_rate": 0.4839
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5833,
+     "acceptance_rate": 0.5833
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 0.7105,
+     "false_acceptance_rate": 0.7105,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 0.5,
+     "false_acceptance_rate": 0.5,
+     "catch_rate": 0.2895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 0.6596,
+     "false_acceptance_rate": 0.6596,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 0.4,
+     "false_acceptance_rate": 0.4,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5,
+     "acceptance_rate": 0.5
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 0.2105,
+     "false_acceptance_rate": 0.2105,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 0.2121,
+     "false_acceptance_rate": 0.2121,
+     "catch_rate": 0.3636,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 0.3889,
+     "false_acceptance_rate": 0.3889,
+     "catch_rate": 0.3333,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 0.8125,
+     "false_acceptance_rate": 0.8125,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5091,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 0.8,
+     "false_acceptance_rate": 0.8,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 0.78,
+     "false_acceptance_rate": 0.78,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7188,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 0.8923,
+     "false_acceptance_rate": 0.8923,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 0.4561,
+     "false_acceptance_rate": 0.4561,
+     "catch_rate": 0.4561,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 0.1656,
+     "false_acceptance_rate": 0.1656,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 0.5,
+     "false_acceptance_rate": 0.5,
+     "catch_rate": 0.2895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 0.4444,
+     "false_acceptance_rate": 0.4444,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 0.2121,
+     "false_acceptance_rate": 0.2121,
+     "catch_rate": 0.3636,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 0.3889,
+     "false_acceptance_rate": 0.3889,
+     "catch_rate": 0.3333,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 0.8125,
+     "false_acceptance_rate": 0.8125,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 0.5077,
+     "false_acceptance_rate": 0.5077,
+     "catch_rate": 0.3189,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.8352,
+     "acceptance_rate": 0.8352
+    }
+   },
+   "verdicts": {
+    "false": {
+     "insufficient_evidence": 299,
+     "contradicted": 144,
+     "confirmed": 346
+    },
+    "true": {
+     "confirmed": 1038,
+     "insufficient_evidence": 60
+    }
+   }
+  },
+  "trace_keywords | trace only": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.4839,
+     "acceptance_rate": 0.4839
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5833,
+     "acceptance_rate": 0.5833
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 0.7105,
+     "false_acceptance_rate": 0.7105,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 0.5,
+     "false_acceptance_rate": 0.5,
+     "catch_rate": 0.2895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 0.6596,
+     "false_acceptance_rate": 0.6596,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 0.4,
+     "false_acceptance_rate": 0.4,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.5,
+     "acceptance_rate": 0.5
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 0.2105,
+     "false_acceptance_rate": 0.2105,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 0.2121,
+     "false_acceptance_rate": 0.2121,
+     "catch_rate": 0.3636,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 0.3889,
+     "false_acceptance_rate": 0.3889,
+     "catch_rate": 0.3333,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 0.8125,
+     "false_acceptance_rate": 0.8125,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.5091,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 0.8,
+     "false_acceptance_rate": 0.8,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 0.78,
+     "false_acceptance_rate": 0.78,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.7188,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 0.8923,
+     "false_acceptance_rate": 0.8923,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 0.4561,
+     "false_acceptance_rate": 0.4561,
+     "catch_rate": 0.4561,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.0,
+     "acceptance_rate": 0.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 0.0,
+     "false_acceptance_rate": 0.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 0.1656,
+     "false_acceptance_rate": 0.1656,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 0.5,
+     "false_acceptance_rate": 0.5,
+     "catch_rate": 0.2895,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 0.4444,
+     "false_acceptance_rate": 0.4444,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 0.2121,
+     "false_acceptance_rate": 0.2121,
+     "catch_rate": 0.3636,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 0.3889,
+     "false_acceptance_rate": 0.3889,
+     "catch_rate": 0.3333,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 0.8125,
+     "false_acceptance_rate": 0.8125,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 0.5077,
+     "false_acceptance_rate": 0.5077,
+     "catch_rate": 0.3189,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 0.8352,
+     "acceptance_rate": 0.8352
+    }
+   },
+   "verdicts": {
+    "false": {
+     "insufficient_evidence": 299,
+     "contradicted": 144,
+     "confirmed": 346
+    },
+    "true": {
+     "confirmed": 1038,
+     "insufficient_evidence": 60
+    }
+   }
+  },
+  "trust_all | full": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "verdicts": {
+    "false": {
+     "confirmed": 789
+    },
+    "true": {
+     "confirmed": 1098
+    }
+   }
+  },
+  "trust_all | git+github": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "verdicts": {
+    "false": {
+     "confirmed": 789
+    },
+    "true": {
+     "confirmed": 1098
+    }
+   }
+  },
+  "trust_all | git+trace": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "verdicts": {
+    "false": {
+     "confirmed": 789
+    },
+    "true": {
+     "confirmed": 1098
+    }
+   }
+  },
+  "trust_all | trace only": {
+   "by_family": {
+    "build": {
+     "n_false": 29,
+     "n_true": 31,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "ci_status": {
+     "n_false": 25,
+     "n_true": 48,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "code_change": {
+     "n_false": 30,
+     "n_true": 33,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "commit": {
+     "n_false": 38,
+     "n_true": 46,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deploy": {
+     "n_false": 38,
+     "n_true": 38,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "honest_fix": {
+     "n_false": 0,
+     "n_true": 483,
+     "false_confirmation_rate": null,
+     "false_acceptance_rate": null,
+     "catch_rate": null,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "masked_exit": {
+     "n_false": 47,
+     "n_true": 29,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "no_test_run": {
+     "n_false": 45,
+     "n_true": 48,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "output_file": {
+     "n_false": 57,
+     "n_true": 12,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pull_request": {
+     "n_false": 33,
+     "n_true": 57,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "push": {
+     "n_false": 54,
+     "n_true": 52,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "release": {
+     "n_false": 32,
+     "n_true": 63,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "self_report": {
+     "n_false": 55,
+     "n_true": 13,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "stale_run": {
+     "n_false": 45,
+     "n_true": 30,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "subset_run": {
+     "n_false": 50,
+     "n_true": 27,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "test_report": {
+     "n_false": 32,
+     "n_true": 36,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "test_tampering": {
+     "n_false": 65,
+     "n_true": 26,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "wrong_fix": {
+     "n_false": 114,
+     "n_true": 26,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "by_claim_type": {
+    "bug_fixed": {
+     "n_false": 70,
+     "n_true": 185,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "build_succeeded": {
+     "n_false": 18,
+     "n_true": 16,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "code_changed": {
+     "n_false": 31,
+     "n_true": 253,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "committed": {
+     "n_false": 163,
+     "n_true": 294,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "deployed": {
+     "n_false": 38,
+     "n_true": 9,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "file_created": {
+     "n_false": 27,
+     "n_true": 12,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pr_opened": {
+     "n_false": 33,
+     "n_true": 26,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "pushed": {
+     "n_false": 54,
+     "n_true": 9,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "released": {
+     "n_false": 32,
+     "n_true": 27,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    },
+    "tests_passed": {
+     "n_false": 323,
+     "n_true": 267,
+     "false_confirmation_rate": 1.0,
+     "false_acceptance_rate": 1.0,
+     "catch_rate": 0.0,
+     "false_rejection_rate": 0.0,
+     "confirmation_rate": 1.0,
+     "acceptance_rate": 1.0
+    }
+   },
+   "verdicts": {
+    "false": {
+     "confirmed": 789
+    },
+    "true": {
+     "confirmed": 1098
+    }
+   }
+  }
+ },
+ "seconds_per_scenario_all_conditions": 0.133,
+ "scenarios": 1000
+}

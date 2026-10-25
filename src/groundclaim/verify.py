@@ -82,6 +82,9 @@ class Sources:
     github: GitHub | None = None
     workspace: Path | None = None  # where claimed files are looked up (defaults to the repository)
     runs: list[CommandRun] = field(default_factory=list)
+    ignore_checks: set[str] = field(
+        default_factory=set
+    )  # CI check names to leave out (e.g. GroundClaim's own job)
 
 
 class Verifier:
@@ -325,7 +328,7 @@ class Verifier:
         assert gh is not None and head is not None
         links: list[tuple[Link, bool]] = []
         try:
-            runs = gh.check_runs(head)
+            runs = [r for r in gh.check_runs(head) if r.get("name") not in self.s.ignore_checks]
             statuses = gh.statuses(head)
         except GitHubError as exc:
             self.warn(str(exc))
