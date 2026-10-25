@@ -626,7 +626,7 @@ FAMILIES: dict[str, tuple[Callable[[Episode], None], float]] = {
     "masked_exit": (f_masked, 0.8),
     "self_report": (f_echo, 0.8),
     "subset_run": (f_subset, 0.8),
-    "find_test_tampering": (f_tamper, 1.0),
+    "test_tampering": (f_tamper, 1.0),
     "build": (f_build, 0.6),
     "commit": (f_commit, 1.0),
     "push": (f_push, 1.0),

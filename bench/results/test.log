@@ -1,0 +1,348 @@
+{
+ "extraction": {
+  "tp": 1717,
+  "fp": 0,
+  "fn": 485,
+  "precision": 1.0,
+  "recall": 0.7797,
+  "f1": 0.8762
+ },
+ "summary": {
+  "groundclaim | full": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.0,
+   "false_acceptance_rate": 0.0304,
+   "catch_rate": 0.6781,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.592,
+   "acceptance_rate": 0.939,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.0,
+     0.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.6464,
+     0.7083
+    ],
+    "confirmation_rate": [
+     0.563,
+     0.623
+    ]
+   }
+  },
+  "groundclaim | git+github": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.0,
+   "false_acceptance_rate": 0.1077,
+   "catch_rate": 0.4816,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.592,
+   "acceptance_rate": 0.7605,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.0,
+     0.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.4465,
+     0.5176
+    ],
+    "confirmation_rate": [
+     0.563,
+     0.623
+    ]
+   }
+  },
+  "groundclaim | git+trace": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.0,
+   "false_acceptance_rate": 0.0697,
+   "catch_rate": 0.5387,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.5255,
+   "acceptance_rate": 0.9208,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.0,
+     0.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.5045,
+     0.5729
+    ],
+    "confirmation_rate": [
+     0.5004,
+     0.5525
+    ]
+   }
+  },
+  "groundclaim | trace only": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.0,
+   "false_acceptance_rate": 0.1673,
+   "catch_rate": 0.256,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.0,
+   "acceptance_rate": 0.9098,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.0,
+     0.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.2282,
+     0.2839
+    ],
+    "confirmation_rate": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "trace_keywords | full": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.4385,
+   "false_acceptance_rate": 0.4385,
+   "catch_rate": 0.1825,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.9454,
+   "acceptance_rate": 0.9454,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.4063,
+     0.47
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.1565,
+     0.2081
+    ],
+    "confirmation_rate": [
+     0.9306,
+     0.959
+    ]
+   }
+  },
+  "trace_keywords | git+github": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.0,
+   "false_acceptance_rate": 0.0,
+   "catch_rate": 0.0,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.0,
+   "acceptance_rate": 0.0,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.0,
+     0.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.0,
+     0.0
+    ],
+    "confirmation_rate": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "trace_keywords | git+trace": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.4385,
+   "false_acceptance_rate": 0.4385,
+   "catch_rate": 0.1825,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.9454,
+   "acceptance_rate": 0.9454,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.4063,
+     0.47
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.1565,
+     0.2081
+    ],
+    "confirmation_rate": [
+     0.9306,
+     0.959
+    ]
+   }
+  },
+  "trace_keywords | trace only": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 0.4385,
+   "false_acceptance_rate": 0.4385,
+   "catch_rate": 0.1825,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 0.9454,
+   "acceptance_rate": 0.9454,
+   "ci95": {
+    "false_confirmation_rate": [
+     0.4063,
+     0.47
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.1565,
+     0.2081
+    ],
+    "confirmation_rate": [
+     0.9306,
+     0.959
+    ]
+   }
+  },
+  "trust_all | full": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 1.0,
+   "false_acceptance_rate": 1.0,
+   "catch_rate": 0.0,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 1.0,
+   "acceptance_rate": 1.0,
+   "ci95": {
+    "false_confirmation_rate": [
+     1.0,
+     1.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.0,
+     0.0
+    ],
+    "confirmation_rate": [
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "trust_all | git+github": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 1.0,
+   "false_acceptance_rate": 1.0,
+   "catch_rate": 0.0,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 1.0,
+   "acceptance_rate": 1.0,
+   "ci95": {
+    "false_confirmation_rate": [
+     1.0,
+     1.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.0,
+     0.0
+    ],
+    "confirmation_rate": [
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "trust_all | git+trace": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 1.0,
+   "false_acceptance_rate": 1.0,
+   "catch_rate": 0.0,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 1.0,
+   "acceptance_rate": 1.0,
+   "ci95": {
+    "false_confirmation_rate": [
+     1.0,
+     1.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.0,
+     0.0
+    ],
+    "confirmation_rate": [
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "trust_all | trace only": {
+   "n_false": 789,
+   "n_true": 1098,
+   "false_confirmation_rate": 1.0,
+   "false_acceptance_rate": 1.0,
+   "catch_rate": 0.0,
+   "false_rejection_rate": 0.0,
+   "confirmation_rate": 1.0,
+   "acceptance_rate": 1.0,
+   "ci95": {
+    "false_confirmation_rate": [
+     1.0,
+     1.0
+    ],
+    "false_rejection_rate": [
+     0.0,
+     0.0
+    ],
+    "catch_rate": [
+     0.0,
+     0.0
+    ],
+    "confirmation_rate": [
+     1.0,
+     1.0
+    ]
+   }
+  }
+ }
+}
