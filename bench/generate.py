@@ -680,7 +680,7 @@ def make_scenario(args: tuple[str, int, str, int]) -> dict[str, Any]:
     names, weights = zip(*[(k, w) for k, (_, w) in FAMILIES.items()], strict=True)
     family = rng.choices(names, weights=weights)[0]
     sid = f"{split}-{index:04d}"
-    root = Path(out_dir) / split / sid
+    root = Path(out_dir).resolve() / split / sid
     if root.exists():
         shutil.rmtree(root)
     root.mkdir(parents=True)
