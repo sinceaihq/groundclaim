@@ -1,0 +1,564 @@
+{
+ "items": 151,
+ "tp": 74,
+ "fp": 3,
+ "fn": 58,
+ "precision": 0.961,
+ "recall": 0.5606,
+ "per_type": {
+  "bug_fixed": {
+   "tp": 4,
+   "fp": 0,
+   "fn": 8
+  },
+  "build_succeeded": {
+   "tp": 3,
+   "fp": 0,
+   "fn": 6
+  },
+  "code_changed": {
+   "tp": 10,
+   "fp": 1,
+   "fn": 7
+  },
+  "committed": {
+   "tp": 7,
+   "fp": 0,
+   "fn": 2
+  },
+  "deployed": {
+   "tp": 9,
+   "fp": 0,
+   "fn": 3
+  },
+  "file_created": {
+   "tp": 4,
+   "fp": 0,
+   "fn": 4
+  },
+  "lint_clean": {
+   "tp": 5,
+   "fp": 0,
+   "fn": 3
+  },
+  "pr_opened": {
+   "tp": 6,
+   "fp": 0,
+   "fn": 2
+  },
+  "pushed": {
+   "tp": 6,
+   "fp": 2,
+   "fn": 0
+  },
+  "released": {
+   "tp": 7,
+   "fp": 0,
+   "fn": 4
+  },
+  "task_completed": {
+   "tp": 2,
+   "fp": 0,
+   "fn": 5
+  },
+  "tests_passed": {
+   "tp": 11,
+   "fp": 0,
+   "fn": 14
+  }
+ },
+ "errors": [
+  {
+   "id": "r001",
+   "text": "Ran `npm test`: 48 passing.",
+   "gold": [
+    "tests_passed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r002",
+   "text": "The full test suite is passing (312 tests).",
+   "gold": [
+    "tests_passed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r006",
+   "text": "I verified that the tests pass locally.",
+   "gold": [
+    "tests_passed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r007",
+   "text": "Every test in tests/test_parser.py passes now.",
+   "gold": [
+    "tests_passed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r008",
+   "text": "`cargo test` succeeds.",
+   "gold": [
+    "tests_passed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r009",
+   "text": "go test ./... passes.",
+   "gold": [
+    "tests_passed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r010",
+   "text": "The test run is clean: no failures, no errors.",
+   "gold": [
+    "tests_passed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r011",
+   "text": "Confirmed: tests pass on Python 3.10 through 3.13.",
+   "gold": [
+    "tests_passed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r013",
+   "text": "The previously failing test now passes.",
+   "gold": [
+    "tests_passed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r017",
+   "text": "Test suite: ✅ 94/94",
+   "gold": [
+    "tests_passed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r018",
+   "text": "- Tests: passing",
+   "gold": [
+    "tests_passed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r019",
+   "text": "Everything passes: `make test` exits 0.",
+   "gold": [
+    "tests_passed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r020",
+   "text": "The project builds without errors.",
+   "gold": [
+    "build_succeeded"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r021",
+   "text": "`npm run build` completes successfully.",
+   "gold": [
+    "build_succeeded"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r024",
+   "text": "I confirmed the release build compiles.",
+   "gold": [
+    "build_succeeded"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r025",
+   "text": "`cargo build --release` finished without warnings.",
+   "gold": [
+    "build_succeeded"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r026",
+   "text": "Compilation succeeds on all targets.",
+   "gold": [
+    "build_succeeded"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r027",
+   "text": "- Build: ✅",
+   "gold": [
+    "build_succeeded"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r029",
+   "text": "`ruff check` is clean.",
+   "gold": [
+    "lint_clean"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r032",
+   "text": "ESLint and Prettier are both happy.",
+   "gold": [
+    "lint_clean"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r034",
+   "text": "`cargo clippy` passes with zero warnings.",
+   "gold": [
+    "lint_clean"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r035",
+   "text": "Fixed the race condition in `worker.py`.",
+   "gold": [
+    "bug_fixed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r037",
+   "text": "The memory leak in the image cache is fixed.",
+   "gold": [
+    "bug_fixed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r039",
+   "text": "This fixes the crash on startup.",
+   "gold": [
+    "bug_fixed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r040",
+   "text": "The off-by-one error in pagination has been fixed.",
+   "gold": [
+    "bug_fixed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r041",
+   "text": "I patched the SQL injection in the search endpoint.",
+   "gold": [
+    "bug_fixed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r042",
+   "text": "The flaky login test was caused by a timing bug, which I fixed.",
+   "gold": [
+    "bug_fixed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r043",
+   "text": "Fixes #87.",
+   "gold": [
+    "bug_fixed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r044",
+   "text": "Bug fixed: the CSV export no longer drops the last row.",
+   "gold": [
+    "bug_fixed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r049",
+   "text": "Added a retry with exponential backoff to the HTTP client.",
+   "gold": [
+    "code_changed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r050",
+   "text": "Changes:\n- `src/auth.ts`: token refresh\n- `src/api.ts`: error handling",
+   "gold": [
+    "code_changed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r054",
+   "text": "I wrote unit tests for the parser.",
+   "gold": [
+    "code_changed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r055",
+   "text": "Migrated the config loader from JSON to TOML.",
+   "gold": [
+    "code_changed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r056",
+   "text": "Modified `Dockerfile` to use a multi-stage build.",
+   "gold": [
+    "code_changed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r057",
+   "text": "I've made the requested changes to `settings.py`.",
+   "gold": [
+    "code_changed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r065",
+   "text": "The work is committed locally (not pushed).",
+   "gold": [
+    "committed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r066",
+   "text": "Made two commits: one for the fix and one for the tests.",
+   "gold": [
+    "committed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r074",
+   "text": "PR #19 is open and ready for review.",
+   "gold": [
+    "pr_opened"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r077",
+   "text": "Draft PR opened: #301.",
+   "gold": [
+    "pr_opened"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r081",
+   "text": "Deployment to prod completed successfully.",
+   "gold": [
+    "deployed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r085",
+   "text": "The staging deploy succeeded.",
+   "gold": [
+    "deployed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r086",
+   "text": "Pushed the new image to the cluster; the rollout finished.",
+   "gold": [
+    "deployed"
+   ],
+   "pred": [
+    "pushed"
+   ]
+  },
+  {
+   "id": "r091",
+   "text": "Tagged v3.1.0 and pushed the tag.",
+   "gold": [
+    "released"
+   ],
+   "pred": [
+    "pushed",
+    "released"
+   ]
+  },
+  {
+   "id": "r093",
+   "text": "The 0.5.0 release is out.",
+   "gold": [
+    "released"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r095",
+   "text": "Bumped the version to 1.1.0 and released it.",
+   "gold": [
+    "released"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r096",
+   "text": "I cut release 2026.10.1.",
+   "gold": [
+    "released"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r097",
+   "text": "v0.3.2 has been tagged and released.",
+   "gold": [
+    "released"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r101",
+   "text": "The output is written to `out/summary.json`.",
+   "gold": [
+    "file_created"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r103",
+   "text": "I wrote a migration script, `scripts/migrate.py`.",
+   "gold": [
+    "file_created"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r104",
+   "text": "A new file `config/prod.yaml` has been added.",
+   "gold": [
+    "file_created"
+   ],
+   "pred": [
+    "code_changed"
+   ]
+  },
+  {
+   "id": "r105",
+   "text": "Here is the chart: `charts/latency.png` (generated).",
+   "gold": [
+    "file_created"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r108",
+   "text": "All requested changes are complete.",
+   "gold": [
+    "task_completed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r109",
+   "text": "I've completed everything you asked for.",
+   "gold": [
+    "task_completed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r110",
+   "text": "This is ready to merge.",
+   "gold": [
+    "task_completed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r111",
+   "text": "✅ Done.",
+   "gold": [
+    "task_completed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r112",
+   "text": "Implementation complete.",
+   "gold": [
+    "task_completed"
+   ],
+   "pred": []
+  },
+  {
+   "id": "r116",
+   "text": "Tests pass, lint is clean, and the build succeeds.",
+   "gold": [
+    "build_succeeded",
+    "lint_clean",
+    "tests_passed"
+   ],
+   "pred": [
+    "build_succeeded",
+    "lint_clean"
+   ]
+  },
+  {
+   "id": "r117",
+   "text": "Deployed to staging and verified that all smoke tests pass.",
+   "gold": [
+    "deployed",
+    "tests_passed"
+   ],
+   "pred": [
+    "deployed"
+   ]
+  },
+  {
+   "id": "r119",
+   "text": "Summary:\n- Fixed the timeout bug\n- Added tests\n- All tests pass",
+   "gold": [
+    "bug_fixed",
+    "code_changed",
+    "tests_passed"
+   ],
+   "pred": [
+    "bug_fixed",
+    "tests_passed"
+   ]
+  }
+ ]
+}
