@@ -1,0 +1,26 @@
+# Checks the claims in pull request descriptions (the example from docs/GITHUB_ACTION.md, run on this repository).
+name: Claims
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+permissions:
+  contents: read
+  checks: read
+  statuses: read
+  pull-requests: read
+  deployments: read
+
+jobs:
+  claims:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - uses: ./
+        with:
+          wait-for-checks: "900"
+          ignore-checks: claims
