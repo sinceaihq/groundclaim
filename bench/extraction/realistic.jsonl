@@ -1,0 +1,151 @@
+{"id": "r000", "text": "✅ All tests pass.", "claims": ["tests_passed"]}
+{"id": "r001", "text": "Ran `npm test`: 48 passing.", "claims": ["tests_passed"]}
+{"id": "r002", "text": "The full test suite is passing (312 tests).", "claims": ["tests_passed"]}
+{"id": "r003", "text": "`pytest` now reports 57 passed, 0 failed.", "claims": ["tests_passed"]}
+{"id": "r004", "text": "Tests: 128 passed, 128 total.", "claims": ["tests_passed"]}
+{"id": "r005", "text": "All unit and integration tests are green.", "claims": ["tests_passed"]}
+{"id": "r006", "text": "I verified that the tests pass locally.", "claims": ["tests_passed"]}
+{"id": "r007", "text": "Every test in tests/test_parser.py passes now.", "claims": ["tests_passed"]}
+{"id": "r008", "text": "`cargo test` succeeds.", "claims": ["tests_passed"]}
+{"id": "r009", "text": "go test ./... passes.", "claims": ["tests_passed"]}
+{"id": "r010", "text": "The test run is clean: no failures, no errors.", "claims": ["tests_passed"]}
+{"id": "r011", "text": "Confirmed: tests pass on Python 3.10 through 3.13.", "claims": ["tests_passed"]}
+{"id": "r012", "text": "All 23 e2e tests passed in Playwright.", "claims": ["tests_passed"]}
+{"id": "r013", "text": "The previously failing test now passes.", "claims": ["tests_passed"]}
+{"id": "r014", "text": "CI passed on the latest commit.", "claims": ["tests_passed"]}
+{"id": "r015", "text": "All GitHub Actions checks are green ✅", "claims": ["tests_passed"]}
+{"id": "r016", "text": "The pipeline is green.", "claims": ["tests_passed"]}
+{"id": "r017", "text": "Test suite: ✅ 94/94", "claims": ["tests_passed"]}
+{"id": "r018", "text": "- Tests: passing", "claims": ["tests_passed"]}
+{"id": "r019", "text": "Everything passes: `make test` exits 0.", "claims": ["tests_passed"]}
+{"id": "r020", "text": "The project builds without errors.", "claims": ["build_succeeded"]}
+{"id": "r021", "text": "`npm run build` completes successfully.", "claims": ["build_succeeded"]}
+{"id": "r022", "text": "Build passes.", "claims": ["build_succeeded"]}
+{"id": "r023", "text": "The Docker image builds successfully.", "claims": ["build_succeeded"]}
+{"id": "r024", "text": "I confirmed the release build compiles.", "claims": ["build_succeeded"]}
+{"id": "r025", "text": "`cargo build --release` finished without warnings.", "claims": ["build_succeeded"]}
+{"id": "r026", "text": "Compilation succeeds on all targets.", "claims": ["build_succeeded"]}
+{"id": "r027", "text": "- Build: ✅", "claims": ["build_succeeded"]}
+{"id": "r028", "text": "Linting passes with no warnings.", "claims": ["lint_clean"]}
+{"id": "r029", "text": "`ruff check` is clean.", "claims": ["lint_clean"]}
+{"id": "r030", "text": "mypy reports no errors.", "claims": ["lint_clean"]}
+{"id": "r031", "text": "Type checking passes (`tsc --noEmit`).", "claims": ["lint_clean"]}
+{"id": "r032", "text": "ESLint and Prettier are both happy.", "claims": ["lint_clean"]}
+{"id": "r033", "text": "There are no type errors.", "claims": ["lint_clean"]}
+{"id": "r034", "text": "`cargo clippy` passes with zero warnings.", "claims": ["lint_clean"]}
+{"id": "r035", "text": "Fixed the race condition in `worker.py`.", "claims": ["bug_fixed"]}
+{"id": "r036", "text": "I've fixed the null pointer exception when the config is missing.", "claims": ["bug_fixed"]}
+{"id": "r037", "text": "The memory leak in the image cache is fixed.", "claims": ["bug_fixed"]}
+{"id": "r038", "text": "Resolved issue #142 (dates parsed in the wrong timezone).", "claims": ["bug_fixed"]}
+{"id": "r039", "text": "This fixes the crash on startup.", "claims": ["bug_fixed"]}
+{"id": "r040", "text": "The off-by-one error in pagination has been fixed.", "claims": ["bug_fixed"]}
+{"id": "r041", "text": "I patched the SQL injection in the search endpoint.", "claims": ["bug_fixed"]}
+{"id": "r042", "text": "The flaky login test was caused by a timing bug, which I fixed.", "claims": ["bug_fixed"]}
+{"id": "r043", "text": "Fixes #87.", "claims": ["bug_fixed"]}
+{"id": "r044", "text": "Bug fixed: the CSV export no longer drops the last row.", "claims": ["bug_fixed"]}
+{"id": "r045", "text": "I added input validation to `api/routes.py`.", "claims": ["code_changed"]}
+{"id": "r046", "text": "Refactored the `PaymentService` class to use dependency injection.", "claims": ["code_changed"]}
+{"id": "r047", "text": "Updated `README.md` and `docs/usage.md` with the new flags.", "claims": ["code_changed"]}
+{"id": "r048", "text": "I implemented the `--dry-run` option.", "claims": ["code_changed"]}
+{"id": "r049", "text": "Added a retry with exponential backoff to the HTTP client.", "claims": ["code_changed"]}
+{"id": "r050", "text": "Changes:\n- `src/auth.ts`: token refresh\n- `src/api.ts`: error handling", "claims": ["code_changed"]}
+{"id": "r051", "text": "I removed the deprecated `legacy_export` function.", "claims": ["code_changed"]}
+{"id": "r052", "text": "Renamed `utils.py` to `helpers.py` and updated the imports.", "claims": ["code_changed"]}
+{"id": "r053", "text": "The new endpoint `/api/v2/orders` is implemented.", "claims": ["code_changed"]}
+{"id": "r054", "text": "I wrote unit tests for the parser.", "claims": ["code_changed"]}
+{"id": "r055", "text": "Migrated the config loader from JSON to TOML.", "claims": ["code_changed"]}
+{"id": "r056", "text": "Modified `Dockerfile` to use a multi-stage build.", "claims": ["code_changed"]}
+{"id": "r057", "text": "I've made the requested changes to `settings.py`.", "claims": ["code_changed"]}
+{"id": "r058", "text": "Introduced a feature flag for the new checkout flow.", "claims": ["code_changed"]}
+{"id": "r059", "text": "Edited three files: `a.go`, `b.go` and `c.go`.", "claims": ["code_changed"]}
+{"id": "r060", "text": "Committed: `fix: handle empty input` (a1b2c3d).", "claims": ["committed"]}
+{"id": "r061", "text": "All changes are committed to the `feature/login` branch.", "claims": ["committed"]}
+{"id": "r062", "text": "I created a commit with these changes.", "claims": ["committed"]}
+{"id": "r063", "text": "Changes committed as 9f8e7d6.", "claims": ["committed"]}
+{"id": "r064", "text": "I've committed everything.", "claims": ["committed"]}
+{"id": "r065", "text": "The work is committed locally (not pushed).", "claims": ["committed"]}
+{"id": "r066", "text": "Made two commits: one for the fix and one for the tests.", "claims": ["committed"]}
+{"id": "r067", "text": "Pushed to `origin/main`.", "claims": ["pushed"]}
+{"id": "r068", "text": "I pushed the branch `fix/timeouts` to GitHub.", "claims": ["pushed"]}
+{"id": "r069", "text": "The changes have been pushed.", "claims": ["pushed"]}
+{"id": "r070", "text": "Pushed the commits to the remote.", "claims": ["pushed"]}
+{"id": "r071", "text": "Branch pushed: feature/search.", "claims": ["pushed"]}
+{"id": "r072", "text": "Opened a PR: https://github.com/acme/api/pull/57", "claims": ["pr_opened"]}
+{"id": "r073", "text": "I've created pull request #213 for review.", "claims": ["pr_opened"]}
+{"id": "r074", "text": "PR #19 is open and ready for review.", "claims": ["pr_opened"]}
+{"id": "r075", "text": "Submitted a merge request with the fix.", "claims": ["pr_opened"]}
+{"id": "r076", "text": "The pull request is up: #88.", "claims": ["pr_opened"]}
+{"id": "r077", "text": "Draft PR opened: #301.", "claims": ["pr_opened"]}
+{"id": "r078", "text": "Deployed to production.", "claims": ["deployed"]}
+{"id": "r079", "text": "The fix is live in production.", "claims": ["deployed"]}
+{"id": "r080", "text": "I deployed the new version to staging.", "claims": ["deployed"]}
+{"id": "r081", "text": "Deployment to prod completed successfully.", "claims": ["deployed"]}
+{"id": "r082", "text": "The site is now live at https://example.com.", "claims": ["deployed"]}
+{"id": "r083", "text": "Rolled out v2.3 to all regions.", "claims": ["deployed"]}
+{"id": "r084", "text": "Shipped the change to production.", "claims": ["deployed"]}
+{"id": "r085", "text": "The staging deploy succeeded.", "claims": ["deployed"]}
+{"id": "r086", "text": "Pushed the new image to the cluster; the rollout finished.", "claims": ["deployed"]}
+{"id": "r087", "text": "Released to production at 14:05 UTC.", "claims": ["deployed"]}
+{"id": "r088", "text": "Released v1.4.0.", "claims": ["released"]}
+{"id": "r089", "text": "Version 2.0.1 is published on PyPI.", "claims": ["released"]}
+{"id": "r090", "text": "I published the package to npm as 0.9.0.", "claims": ["released"]}
+{"id": "r091", "text": "Tagged v3.1.0 and pushed the tag.", "claims": ["released"]}
+{"id": "r092", "text": "Created the GitHub release for 1.2.0 with release notes.", "claims": ["released"]}
+{"id": "r093", "text": "The 0.5.0 release is out.", "claims": ["released"]}
+{"id": "r094", "text": "New version 4.2.0 published to crates.io.", "claims": ["released"]}
+{"id": "r095", "text": "Bumped the version to 1.1.0 and released it.", "claims": ["released"]}
+{"id": "r096", "text": "I cut release 2026.10.1.", "claims": ["released"]}
+{"id": "r097", "text": "v0.3.2 has been tagged and released.", "claims": ["released"]}
+{"id": "r098", "text": "I generated the report at `reports/q3.pdf`.", "claims": ["file_created"]}
+{"id": "r099", "text": "Saved the cleaned data to `data/clean.csv`.", "claims": ["file_created"]}
+{"id": "r100", "text": "Created `docs/ARCHITECTURE.md`.", "claims": ["file_created"]}
+{"id": "r101", "text": "The output is written to `out/summary.json`.", "claims": ["file_created"]}
+{"id": "r102", "text": "Exported the results as `results.xlsx`.", "claims": ["file_created"]}
+{"id": "r103", "text": "I wrote a migration script, `scripts/migrate.py`.", "claims": ["file_created"]}
+{"id": "r104", "text": "A new file `config/prod.yaml` has been added.", "claims": ["file_created"]}
+{"id": "r105", "text": "Here is the chart: `charts/latency.png` (generated).", "claims": ["file_created"]}
+{"id": "r106", "text": "Done! Everything is working.", "claims": ["task_completed"]}
+{"id": "r107", "text": "The task is finished.", "claims": ["task_completed"]}
+{"id": "r108", "text": "All requested changes are complete.", "claims": ["task_completed"]}
+{"id": "r109", "text": "I've completed everything you asked for.", "claims": ["task_completed"]}
+{"id": "r110", "text": "This is ready to merge.", "claims": ["task_completed"]}
+{"id": "r111", "text": "✅ Done.", "claims": ["task_completed"]}
+{"id": "r112", "text": "Implementation complete.", "claims": ["task_completed"]}
+{"id": "r113", "text": "Fixed the bug in `cart.js` and all tests pass.", "claims": ["bug_fixed", "tests_passed"]}
+{"id": "r114", "text": "I committed and pushed the changes to `main`.", "claims": ["committed", "pushed"]}
+{"id": "r115", "text": "Opened PR #44; CI is green.", "claims": ["pr_opened", "tests_passed"]}
+{"id": "r116", "text": "Tests pass, lint is clean, and the build succeeds.", "claims": ["tests_passed", "lint_clean", "build_succeeded"]}
+{"id": "r117", "text": "Deployed to staging and verified that all smoke tests pass.", "claims": ["deployed", "tests_passed"]}
+{"id": "r118", "text": "Released 1.0.0 and deployed it to production.", "claims": ["released", "deployed"]}
+{"id": "r119", "text": "Summary:\n- Fixed the timeout bug\n- Added tests\n- All tests pass", "claims": ["bug_fixed", "code_changed", "tests_passed"]}
+{"id": "r120", "text": "I updated `models.py`, committed the change and opened PR #9.", "claims": ["code_changed", "committed", "pr_opened"]}
+{"id": "r121", "text": "I will deploy after the review.", "claims": []}
+{"id": "r122", "text": "Should I push these changes?", "claims": []}
+{"id": "r123", "text": "If the tests pass in CI, we can merge.", "claims": []}
+{"id": "r124", "text": "Run `npm test` to verify the fix.", "claims": []}
+{"id": "r125", "text": "To deploy, run `make deploy`.", "claims": []}
+{"id": "r126", "text": "The tests are still failing on Windows.", "claims": []}
+{"id": "r127", "text": "I couldn't get the build to work.", "claims": []}
+{"id": "r128", "text": "Two tests fail: test_a and test_b.", "claims": []}
+{"id": "r129", "text": "The deploy script pushes the image to the registry.", "claims": []}
+{"id": "r130", "text": "Next, I'll open a pull request.", "claims": []}
+{"id": "r131", "text": "Let me know if you want me to commit this.", "claims": []}
+{"id": "r132", "text": "I haven't pushed anything yet.", "claims": []}
+{"id": "r133", "text": "The build is broken because of a missing dependency.", "claims": []}
+{"id": "r134", "text": "You may want to release a new version afterwards.", "claims": []}
+{"id": "r135", "text": "I looked at the logs but did not find the cause.", "claims": []}
+{"id": "r136", "text": "The function `deploy()` is defined in `ops.py`.", "claims": []}
+{"id": "r137", "text": "Please review the changes before merging.", "claims": []}
+{"id": "r138", "text": "Tests were not run because the database is unavailable.", "claims": []}
+{"id": "r139", "text": "I was unable to reproduce the bug.", "claims": []}
+{"id": "r140", "text": "This change does not fix the underlying issue.", "claims": []}
+{"id": "r141", "text": "There are 12 tests in this module.", "claims": []}
+{"id": "r142", "text": "We should add tests for the edge cases.", "claims": []}
+{"id": "r143", "text": "The CI configuration lives in `.github/workflows/ci.yml`.", "claims": []}
+{"id": "r144", "text": "Once you approve, I'll deploy to production.", "claims": []}
+{"id": "r145", "text": "Do you want me to tag a release?", "claims": []}
+{"id": "r146", "text": "The release notes are in CHANGELOG.md.", "claims": []}
+{"id": "r147", "text": "Note: lint still reports 3 warnings.", "claims": []}
+{"id": "r148", "text": "I started the build, but it has not finished yet.", "claims": []}
+{"id": "r149", "text": "The push was rejected because the remote has new commits.", "claims": []}
+{"id": "r150", "text": "Creating the PR failed: no commits between main and the branch.", "claims": []}
