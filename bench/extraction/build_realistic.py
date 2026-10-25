@@ -145,8 +145,14 @@ ITEMS: list[tuple[str, list[str]]] = [
     ("Tests pass, lint is clean, and the build succeeds.", ["tests_passed", "lint_clean", "build_succeeded"]),
     ("Deployed to staging and verified that all smoke tests pass.", ["deployed", "tests_passed"]),
     ("Released 1.0.0 and deployed it to production.", ["released", "deployed"]),
-    ("Summary:\n- Fixed the timeout bug\n- Added tests\n- All tests pass", ["bug_fixed", "code_changed", "tests_passed"]),
-    ("I updated `models.py`, committed the change and opened PR #9.", ["code_changed", "committed", "pr_opened"]),
+    (
+        "Summary:\n- Fixed the timeout bug\n- Added tests\n- All tests pass",
+        ["bug_fixed", "code_changed", "tests_passed"],
+    ),
+    (
+        "I updated `models.py`, committed the change and opened PR #9.",
+        ["code_changed", "committed", "pr_opened"],
+    ),
     # --- not claims ------------------------------------------------------------------------------
     ("I will deploy after the review.", []),
     ("Should I push these changes?", []),

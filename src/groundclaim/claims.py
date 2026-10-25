@@ -43,7 +43,8 @@ PATTERNS: list[tuple[ClaimType, re.Pattern[str]]] = [
         r"|tests?\s+(?:are\s+|is\s+)?(?:now\s+)?(?:passing|green|all\s+pass)"
         r"|tests?\s+(?:should|will|now)\s+(?:all\s+)?(?:now\s+)?pass"
         r"|(?:test\s+suite|tests|test\s+run|pytest|jest|vitest|npm test|go test|cargo test|unit tests)\s+(?:now\s+)?(?:passes|passed|succeeds|succeeded|is\s+green)"
-        r"|\d+\s+(?:of\s+\d+\s+)?tests?\s+passed|\d+\s+passed\b|(?:ci|pipeline|checks?)\s+(?:is\s+|are\s+)?(?:now\s+)?(?:green|passing|passes|passed))",
+        r"|(?:every|each)\s+test\s+(?:now\s+)?(?:passes|passed)"
+        r"|\d+\s+(?:of\s+\d+\s+)?tests?\s+passed|\d+\s+passed\b|(?:ci|pipeline|checks?)(?:\s+(?:run|checks?))?\s+(?:is\s+|are\s+)?(?:now\s+)?(?:green|passing|passes|pass|passed))",
         re.IGNORECASE)),
     ("build_succeeded", re.compile(
         r"\b(?:build\s+(?:now\s+)?(?:succeeds|succeeded|passes|passed|works|is\s+green|is\s+successful)|builds?\s+(?:cleanly|successfully)"
@@ -55,22 +56,26 @@ PATTERNS: list[tuple[ClaimType, re.Pattern[str]]] = [
         re.IGNORECASE)),
     ("bug_fixed", re.compile(r"\b(?:fixed|resolved|repaired|patched)\s+(?:the\s+|a\s+|this\s+|an?\s+)?(?:[\w-]+\s+){0,3}?(?:bug|issue|error|problem|crash|regression|failure|exception|leak)", re.IGNORECASE)),
     ("code_changed", re.compile(
-        r"\b(?:implemented|added|updated|modified|changed|refactored|rewrote|edited|removed|renamed|introduced)\b",
+        r"\b(?:implemented|added|updated|modified|changed|refactored|rewrote|edited|removed|renamed|introduced)\b|\bchanges\s+made\s+to\b",
         re.IGNORECASE)),
-    ("committed", re.compile(r"\b(?:committed|made\s+a\s+commit|created\s+a\s+commit|commit(?:ted)?\s+(?:the\s+)?changes)\b", re.IGNORECASE)),
+    ("committed", re.compile(r"\b(?:committed|made\s+a\s+commit|created\s+a\s+commit|commit(?:ted)?\s+(?:the\s+)?changes)\b|\bin\s+commit\s+[0-9a-f]{7,40}\b", re.IGNORECASE)),
     ("pushed", re.compile(r"\bpushed\b", re.IGNORECASE)),
-    ("pr_opened", re.compile(r"\b(?:opened|created|submitted|raised)\s+(?:a\s+|the\s+)?(?:new\s+)?(?:pull\s+request|PR|merge\s+request|MR)\b|/pull/\d+", re.IGNORECASE)),
+    ("pr_opened", re.compile(r"\b(?:opened|created|submitted|raised)\s+(?:a\s+|the\s+)?(?:new\s+)?(?:pull\s+request|PR|merge\s+request|MR)\b|/pull/\d+|\b(?:pull\s+request|PR)\s+is\s+(?:now\s+)?up\b", re.IGNORECASE)),
     ("deployed", re.compile(
-        r"\b(?:deployed|shipped|rolled\s+out|released\s+to\s+(?:production|prod|staging))\b|\bdeployment\s+(?:succeeded|was\s+successful|is\s+(?:live|complete))\b"
-        r"|\b(?:is|are)\s+(?:now\s+)?live\s+(?:on|at|in)\b",
+        r"\b(?:deployed|shipped|rolled\s+out|released\s+to\s+(?:production|prod|staging))\b|\bdeployment(?:\s+to\s+\w+)?\s+(?:succeeded|was\s+successful|is\s+(?:live|complete))\b"
+        r"|(?:\b(?:is|are)|'s)\s+(?:now\s+)?live\s+(?:on|at|in)\b",
         re.IGNORECASE)),
     ("released", re.compile(
-        r"\b(?:published|released|tagged)\s+(?:version\s+|release\s+|v(?=\d))?\d+\.\d+|\bpublished\s+(?:it\s+|the\s+package\s+)?(?:to|on)\s+(?:pypi|npm|crates\.io|the\s+registry)\b"
+        r"\b(?:published|released|tagged)\s+(?:version\s+|release\s+)?v?\d+\.\d+|\bversion\s+v?\d+\.\d+\S*\s+is\s+(?:now\s+)?released\b|\bcreated\s+(?:a\s+)?tag\s+v?\d|\bpublished\s+(?:it\s+|the\s+package\s+)?(?:to|on)\s+(?:pypi|npm|crates\.io|the\s+registry)\b"
         r"|\bcreated\s+(?:a\s+|the\s+)?(?:github\s+)?release\b",
         re.IGNORECASE)),
-    ("file_created", re.compile(r"\b(?:generated|created|wrote|produced|exported|saved)\s+(?:the\s+|a\s+|an\s+)?(?:\w+\s+){0,3}?(?:file|report|document|pdf|spreadsheet|csv|xlsx|docx|`)", re.IGNORECASE)),
-    ("task_completed", re.compile(r"\b(?:task\s+is\s+(?:now\s+)?(?:complete|completed|done|finished)|(?:everything|all)\s+(?:is\s+)?(?:working|done|complete)|i(?:'ve| have)\s+completed\s+the\s+task)\b", re.IGNORECASE)),
+    ("file_created", re.compile(r"\b(?:generated|created|wrote|produced|exported|saved)\s+(?:the\s+|a\s+|an\s+)?(?:\w+\s+){0,3}?(?:file|report|document|pdf|spreadsheet|csv|xlsx|docx|`)|\breport\s+is\s+at\s+`", re.IGNORECASE)),
+    ("task_completed", re.compile(r"\b(?:task\s+is\s+(?:now\s+)?(?:complete|completed|done|finished)|(?:everything|all)\s+(?:is\s+)?(?:working|done|complete)|i(?:'ve| have)\s+completed\s+the\s+task|that\s+completes\s+the\s+task)\b", re.IGNORECASE)),
 ]  # fmt: skip
+
+
+# "without errors", "0 failed": negative words that report success.
+POSITIVE_NEGATIVES_RE = re.compile(r"\bwithout\s+errors\b|\b0\s+fail(?:ed|ures?)?\b", re.IGNORECASE)
 
 
 def _sentences(text: str) -> Iterator[tuple[int, int, str]]:
@@ -133,8 +138,8 @@ def extract_claims(message: str) -> list[Claim]:
             if not m:
                 continue
             # "tests are still failing", "I couldn't deploy": negation near the matched words
-            window = sentence[max(0, m.start() - 40) : m.end() + 25]
-            if NEGATION_RE.search(window) and not re.search(r"\b0\s+fail", window, re.IGNORECASE):
+            window = POSITIVE_NEGATIVES_RE.sub(" ", sentence[max(0, m.start() - 40) : m.end() + 25])
+            if NEGATION_RE.search(window):
                 continue
             if kind == "code_changed" and not (PATH_RE.search(sentence) or re.search(
                 r"\b(?:function|method|class|endpoint|test|feature|support|handler|check|validation|fix|option|flag|module|component|config)\b",
